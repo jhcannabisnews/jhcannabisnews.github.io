@@ -59,11 +59,18 @@
     <textarea id="ask-q" required maxlength="1500"
       placeholder="e.g. If the federal ban hits December 11, can I still buy delta-9 gummies in my state?"></textarea>
 
-    <button class="btn" type="submit">Send to James &amp; Hope →</button>
-    <p class="note">This opens your email app with your message ready to send to
-    <strong>jhcannabisnews@zohomail.com</strong>. Please don't include your full name, address, or
-    anything you wouldn't want read on air. We can't give legal advice about your own situation.</p>
+    <label for="ask-email">Email <span class="note">(optional, only if you'd like a reply; never shown on air)</span></label>
+    <input id="ask-email" type="email" maxlength="120" placeholder="you@example.com">
+
+    <button class="btn" type="submit" id="ask-send">Send to James &amp; Hope →</button>
+    <p class="note">Your message goes straight to James &amp; Hope. Please don't include your full name,
+    address, or anything you wouldn't want read on air. We can't give legal advice about your own situation.</p>
   </form>
+  <div class="next-date" id="ask-thanks" hidden>
+    <div class="label">✅ SENT</div>
+    <div class="what">Thanks! James &amp; Hope read every message. The best questions get answered on the show.</div>
+    <a href="#" id="ask-again" style="color:var(--purple);font-size:.9rem">Send another →</a>
+  </div>
 
   <h2>Other ways to reach us</h2>
   <p class="lead">Comment on any episode on
@@ -83,16 +90,31 @@
     "Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming","Outside the U.S."];
   const sel = document.getElementById("ask-state");
   STATES.forEach(s => sel.add(new Option(s, s)));
-  document.getElementById("ask-form").addEventListener("submit", e => {
+  // Sends to the channel's Google Form ("Ask James & Hope (website)" in the channel's Google account).
+  const FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdQKvRQkgEkHi9I7CuKwJ8NPbkqaCSWq3TItOqbEavUT9FHIg/formResponse";
+  const form = document.getElementById("ask-form"), thanks = document.getElementById("ask-thanks");
+  form.addEventListener("submit", async e => {
     e.preventDefault();
-    const name = document.getElementById("ask-name").value.trim();
-    const state = sel.value;
-    const type = document.getElementById("ask-type").value;
     const q = document.getElementById("ask-q").value.trim();
-    const subject = `Ask James & Hope: ${type}${state ? " (" + state + ")" : ""}`;
-    const body = `${q}\n\n— ${name || "Anonymous"}${state ? ", " + state : ""}`;
-    location.href = "mailto:jhcannabisnews@zohomail.com?subject=" +
-      encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    if (!q) return;
+    const fd = new FormData();
+    fd.append("entry.1845494612", document.getElementById("ask-name").value.trim());
+    fd.append("entry.225935402", sel.value);
+    fd.append("entry.72880832", document.getElementById("ask-type").value);
+    fd.append("entry.1357786622", document.getElementById("ask-email").value.trim());
+    fd.append("entry.492096164", q);
+    const btn = document.getElementById("ask-send");
+    btn.disabled = true; btn.textContent = "Sending…";
+    try {
+      await fetch(FORM, { method: "POST", mode: "no-cors", body: fd });
+      form.reset(); form.hidden = true; thanks.hidden = false;
+    } catch (err) {
+      alert("Sorry, that didn't send. Please try again, or email jhcannabisnews@zohomail.com.");
+    }
+    btn.disabled = false; btn.textContent = "Send to James & Hope →";
+  });
+  document.getElementById("ask-again").addEventListener("click", e => {
+    e.preventDefault(); thanks.hidden = true; form.hidden = false;
   });
 </script>
 <script src="countdown.js"></script>
