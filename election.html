@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cannabis on the Ballot: Election Night 2026 Results — J&H Cannabis News</title>
+<!-- meta -->
+<meta name="description" content="Cannabis on the ballot Nov 3, 2026: Massachusetts Question 8, Idaho HJR 4 and Houston Proposition A. What yes and no mean, plus live election-night results.">
+<link rel="canonical" href="https://jhcannabisnews.github.io/election.html">
+<meta property="og:site_name" content="J&amp;H Cannabis News">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cannabis on the Ballot: Election Night 2026 Results — J&amp;H Cannabis News">
+<meta property="og:description" content="Cannabis on the ballot Nov 3, 2026: Massachusetts Question 8, Idaho HJR 4 and Houston Proposition A. What yes and no mean, plus live election-night results.">
+<meta property="og:url" content="https://jhcannabisnews.github.io/election.html">
+<meta property="og:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<!-- /meta -->
+<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <img src="logo.png" alt=""><span class="brand">J&amp;H CANNABIS NEWS</span>
+  <a href="index.html">Home</a>
+  <a href="episodes.html">Episodes</a>
+  <a href="shorts.html">Shorts</a>
+  <a href="states.html">States</a>
+  <a href="headlines.html">Headlines</a>
+  <details><summary class="active">More ▾</summary><div class="menu">
+    <a href="election.html" class="active">🗳️ Election 2026</a>
+    <a href="explainers.html">Explainers</a>
+    <a href="watchlist.html">Watch List</a>
+    <a href="ask.html">Ask James &amp; Hope</a>
+    <a href="about.html">About</a>
+  </div></details>
+</nav>
+<div class="wrap">
+  <h1 class="center">🗳️ Cannabis on the Ballot · Nov 3, 2026</h1>
+  <div class="bar"></div>
+  <p class="center" style="color:var(--grey)">Every cannabis vote that matters this November, what a yes or a no
+  really does, and live results on election night.</p>
+
+  <div class="next-date" style="text-align:center">
+    <div class="label">⏱ FIRST POLLS CLOSE (MASSACHUSETTS &amp; HOUSTON, 7 PM CENTRAL)</div>
+    <div class="countdown" data-target="2026-11-03T19:00:00-06:00" data-kind="event"></div>
+  </div>
+
+  <p class="center" id="el-note" style="color:var(--grey);font-size:.9rem;margin-top:14px"></p>
+  <div id="measures"></div>
+  <p class="center" id="el-updated" style="color:var(--grey);font-size:.85rem"></p>
+
+  <p class="center" style="margin-top:22px">
+    <a class="btn" href="cannabis-on-the-ballot-2026.html">📰 Read our ballot breakdown</a>
+    <a class="btn ghost" href="watchlist.html">Watch list →</a>
+  </p>
+  <p class="reviewed center">Statewide measures per Ballotpedia, the Marijuana Policy Project and NORML. Results
+  are unofficial until certified. News reporting, not legal advice.</p>
+</div>
+<footer>
+  News reporting and commentary for educational purposes — not legal advice.
+  · <a href="mailto:jhcannabisnews@zohomail.com">jhcannabisnews@zohomail.com</a>
+</footer>
+<script>
+// Results live in data/election.json; edit that file on election night and the page updates.
+(async function () {
+  const box = document.getElementById("measures");
+  let d;
+  try { d = await (await fetch("data/election.json?t=" + Date.now())).json(); }
+  catch (e) { box.innerHTML = "<p class='center'>Results are loading. Refresh in a minute.</p>"; return; }
+  document.getElementById("el-note").textContent = d.note || "";
+  document.getElementById("el-updated").textContent =
+    "Last updated " + new Date(d.updated).toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  box.innerHTML = d.measures.map(m => {
+    const r = m.result || {};
+    let res;
+    if (r.status === "pending" || r.yes_pct == null) {
+      res = `<div class="el-pending">Results after polls close · ${esc(m.closes)}</div>`;
+    } else {
+      const call = r.called ? `<span class="el-call ${r.called === "yes" ? "yes" : "no"}">${r.called === "yes" ? "✅ PASSES" : "❌ FAILS"}</span>` : "";
+      res = `<div class="el-res">
+        <div class="el-row"><span>YES</span><div class="el-bar"><i class="y" style="width:${+r.yes_pct}%"></i></div><b>${(+r.yes_pct).toFixed(1)}%</b></div>
+        <div class="el-row"><span>NO</span><div class="el-bar"><i class="n" style="width:${+r.no_pct}%"></i></div><b>${(+r.no_pct).toFixed(1)}%</b></div>
+        <div class="el-meta">${r.reporting_pct != null ? esc(r.reporting_pct) + "% of the expected vote counted" : ""} ${call}</div>
+      </div>`;
+    }
+    return `<div class="el-card">
+      <div class="el-place">${esc(m.place)}</div>
+      <h2>${esc(m.name)}: ${esc(m.title)}</h2>
+      ${res}
+      <div class="el-yn"><div><b>A YES vote</b><p>${esc(m.yes)}</p></div><div><b>A NO vote</b><p>${esc(m.no)}</p></div></div>
+      <p class="el-ctx">${esc(m.context)}</p>
+      <a style="color:var(--purple);font-weight:700" href="${esc(m.story)}">Full story →</a>
+    </div>`;
+  }).join("");
+})();
+</script>
+<script src="countdown.js"></script>
+</body>
+</html>

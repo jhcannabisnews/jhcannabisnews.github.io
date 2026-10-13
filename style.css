@@ -121,3 +121,24 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 #hemp-banner b { font-family:Consolas,'Courier New',monospace; }
 #hemp-banner b.live { color:var(--green); }
 #hemp-banner .hb-more { color:var(--purple); font-weight:700; }
+
+/* election night page */
+.el-card { background:var(--panel); border-radius:12px; padding:18px 20px; margin-top:18px; }
+.el-card h2 { font-size:1.25rem; margin:4px 0 12px; }
+.el-place { color:var(--red); font-weight:800; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
+.el-pending { background:#16161c; border:1px dashed #3a3a46; border-radius:10px; padding:12px; text-align:center;
+              color:var(--grey); font-weight:700; }
+.el-res { background:#16161c; border-radius:10px; padding:12px 14px; }
+.el-row { display:grid; grid-template-columns:44px 1fr 64px; gap:10px; align-items:center; margin:6px 0; font-weight:800; }
+.el-bar { height:14px; background:#2b2b35; border-radius:7px; overflow:hidden; }
+.el-bar i { display:block; height:100%; }
+.el-bar i.y { background:var(--green); } .el-bar i.n { background:var(--red); }
+.el-row b { text-align:right; font-family:Consolas,'Courier New',monospace; }
+.el-meta { color:var(--grey); font-size:.85rem; margin-top:6px; }
+.el-call { margin-left:8px; font-weight:900; padding:2px 8px; border-radius:6px; }
+.el-call.yes { background:#173a24; color:var(--green); } .el-call.no { background:#3a171c; color:var(--red); }
+.el-yn { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:14px 0 8px; }
+.el-yn > div { background:#1a1a21; border-radius:10px; padding:10px 12px; }
+.el-yn p { margin:6px 0 0; color:var(--grey); font-size:.92rem; line-height:1.45; }
+.el-ctx { color:var(--grey); font-size:.92rem; line-height:1.5; }
+@media (max-width:600px) { .el-yn { grid-template-columns:1fr; } }

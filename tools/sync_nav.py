@@ -9,7 +9,7 @@ import re
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAIN = [("index.html", "Home"), ("episodes.html", "Episodes"), ("shorts.html", "Shorts"),
         ("states.html", "States"), ("headlines.html", "Headlines")]
-MORE = [("explainers.html", "Explainers"), ("watchlist.html", "Watch List"),
+MORE = [("election.html", "🗳️ Election 2026"), ("explainers.html", "Explainers"), ("watchlist.html", "Watch List"),
         ("ask.html", "Ask James &amp; Hope"), ("about.html", "About")]
 NAV_RE = re.compile(r"<nav>.*?</nav>", re.S)
 

@@ -1,0 +1,42 @@
+{
+  "updated": "2026-10-12T23:45:00-05:00",
+  "note": "Results appear here on election night. Polls close 7 PM Central in Massachusetts and Houston, 9 PM Central in most of Idaho (10 PM in the panhandle).",
+  "measures": [
+    {
+      "id": "ma-q8",
+      "place": "Massachusetts · Statewide",
+      "name": "Question 8",
+      "title": "End recreational marijuana sales",
+      "yes": "Bans licensed retail sales of recreational marijuana starting January 1, 2028. The medical program stays, and existing stores could try to convert to medical.",
+      "no": "Keeps the legal recreational market Massachusetts voters approved in 2016.",
+      "context": "No state has ever shut down a legal recreational market. Polls: UNH 71% no / 24% yes; MassINC 61% no / 27% yes / 11% undecided. Governor Maura Healey and Senators Warren and Markey oppose it. The repeal side has out-raised the no side about 2 to 1.",
+      "closes": "7:00 PM Central",
+      "story": "marijuana-rescheduling-paused.html",
+      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+    },
+    {
+      "id": "id-hjr4",
+      "place": "Idaho · Constitutional amendment",
+      "name": "HJR 4",
+      "title": "Only the legislature can legalize marijuana",
+      "yes": "Amends the Idaho constitution so only the legislature can legalize marijuana or other psychoactive drugs. Citizens permanently lose the ability to do it by ballot initiative.",
+      "no": "Keeps the citizen initiative process as it is.",
+      "context": "Idaho is one of the last states where marijuana is completely illegal. Lawmakers passed HJR 4 58–10 in the House and 29–6 in the Senate, and a medical marijuana initiative fell short of the 2026 ballot.",
+      "closes": "9:00 PM Central (10 PM in the panhandle)",
+      "story": "cannabis-on-the-ballot-2026.html",
+      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+    },
+    {
+      "id": "hou-prop-a",
+      "place": "Houston, Texas · City charter",
+      "name": "Proposition A",
+      "title": "Marijuana arrests become the lowest police priority",
+      "yes": "Writes into the city charter that low-level marijuana arrests are the Houston Police Department's lowest priority. It does NOT legalize marijuana; possession is still a crime under Texas law.",
+      "no": "Leaves police enforcement priorities as they are.",
+      "context": "Ground Game Texas gathered about 40,000 signatures. The Houston police officers' union opposes it. A 2025 Texas appeals court ruling against similar local measures means even a yes vote could face a legal fight. Early voting starts October 19.",
+      "closes": "7:00 PM Central",
+      "story": "cannabis-on-the-ballot-2026.html",
+      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+    }
+  ]
+}
