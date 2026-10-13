@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jhcannabisnews.github.io/sitemap.xml
