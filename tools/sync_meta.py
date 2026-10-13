@@ -21,10 +21,11 @@ DESC = {
     "cannabis-on-the-ballot-2026.html": "Every cannabis vote on Nov 3, 2026: Houston Proposition A, Idaho HJR 4 and Massachusetts Question 8, explained, plus Ohio's new limits.",
     "election.html": "Cannabis on the ballot Nov 3, 2026: Massachusetts Question 8, Idaho HJR 4 and Houston Proposition A. What yes and no mean, plus live election-night results.",
     "checker.html": "Is weed legal in my state? Check recreational marijuana, medical marijuana and delta-8 / hemp THC laws in all 50 states, plus the federal hemp ban dates. Updated October 2026.",
+    "federal-hemp-ban-explained.html": "The federal hemp ban explained: what happens to delta-8, THCA flower, THC gummies and drinks on Nov 12 and Dec 11, 2026, how the ban got delayed, and what it means for you.",
     "ask.html": "Send James & Hope your cannabis-law question about your state. We answer the best ones on the show.",
     "about.html": "About J&H Cannabis News: who James & Hope are, how the show is made, and our sources.",
 }
-ARTICLES = {"texas-delta-8-felony-hemp-ban.html", "marijuana-rescheduling-paused.html", "cannabis-on-the-ballot-2026.html"}
+ARTICLES = {"federal-hemp-ban-explained.html", "texas-delta-8-felony-hemp-ban.html", "marijuana-rescheduling-paused.html", "cannabis-on-the-ballot-2026.html"}
 START, END = "<!-- meta -->", "<!-- /meta -->"
 pages = []
 for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
