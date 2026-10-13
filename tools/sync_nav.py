@@ -16,6 +16,8 @@ NAV_RE = re.compile(r"<nav>.*?</nav>", re.S)
 
 def nav_for(page):
     current = "explainers.html" if page.startswith("explain-") else page
+    if "og:type\" content=\"article" in open(os.path.join(SITE, page), encoding="utf-8").read():
+        current = "episodes.html"          # episode articles live under Episodes
     def link(href, label):
         cls = ' class="active"' if href == current else ""
         return f'<a href="{href}"{cls}>{label}</a>'

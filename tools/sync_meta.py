@@ -16,9 +16,13 @@ DESC = {
     "explain-hemp-vs-marijuana.html": "The legal line between hemp and marijuana: the 0.3% delta-9 THC rule, total THC, and what's changing.",
     "explain-schedule-1.html": "What Schedule I actually means under federal law, and what moving marijuana to Schedule III does and doesn't change.",
     "explain-thca.html": "THCA vs. delta-9: why 'hemp flower' gets you high, and how total-THC testing rules are closing the loophole.",
+    "texas-delta-8-felony-hemp-ban.html": "Texas made delta-8, THCA flower and other hemp THC a felony to possess. What's still legal, the court fight, and the federal hemp ban dates: Nov 12 and Dec 11.",
+    "marijuana-rescheduling-paused.html": "A DEA judge paused marijuana rescheduling. Medical moved to Schedule III in April; here's what happens to the rest, plus Massachusetts Question 8 and the hemp ban.",
+    "cannabis-on-the-ballot-2026.html": "Every cannabis vote on Nov 3, 2026: Houston Proposition A, Idaho HJR 4 and Massachusetts Question 8, explained, plus Ohio's new limits.",
     "ask.html": "Send James & Hope your cannabis-law question about your state. We answer the best ones on the show.",
     "about.html": "About J&H Cannabis News: who James & Hope are, how the show is made, and our sources.",
 }
+ARTICLES = {"texas-delta-8-felony-hemp-ban.html", "marijuana-rescheduling-paused.html", "cannabis-on-the-ballot-2026.html"}
 START, END = "<!-- meta -->", "<!-- /meta -->"
 pages = []
 for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
@@ -35,7 +39,7 @@ for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
         f'<meta name="description" content="{e(desc)}">',
         f'<link rel="canonical" href="{url}">',
         '<meta property="og:site_name" content="J&amp;H Cannabis News">',
-        '<meta property="og:type" content="website">',
+        f'<meta property="og:type" content="{"article" if page in ARTICLES else "website"}">',
         f'<meta property="og:title" content="{e(title)}">',
         f'<meta property="og:description" content="{e(desc)}">',
         f'<meta property="og:url" content="{url}">',
