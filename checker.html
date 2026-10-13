@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is Weed Legal in My State? 2026 Cannabis, Delta-8 &amp; THC Law Checker — J&H Cannabis News</title>
+<!-- meta -->
+<meta name="description" content="Is weed legal in my state? Check recreational marijuana, medical marijuana and delta-8 / hemp THC laws in all 50 states, plus the federal hemp ban dates. Updated October 2026.">
+<link rel="canonical" href="https://jhcannabisnews.github.io/checker.html">
+<meta property="og:site_name" content="J&amp;H Cannabis News">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Is Weed Legal in My State? 2026 Cannabis, Delta-8 &amp; THC Law Checker — J&amp;H Cannabis News">
+<meta property="og:description" content="Is weed legal in my state? Check recreational marijuana, medical marijuana and delta-8 / hemp THC laws in all 50 states, plus the federal hemp ban dates. Updated October 2026.">
+<meta property="og:url" content="https://jhcannabisnews.github.io/checker.html">
+<meta property="og:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<!-- /meta -->
+<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <img src="logo.png" alt=""><span class="brand">J&amp;H CANNABIS NEWS</span>
+  <a href="index.html">Home</a>
+  <a href="checker.html" class="active">Is It Legal?</a>
+  <a href="episodes.html">Episodes</a>
+  <a href="shorts.html">Shorts</a>
+  <a href="states.html">States</a>
+  <a href="headlines.html">Headlines</a>
+  <details><summary>More ▾</summary><div class="menu">
+    <a href="election.html">🗳️ Election 2026</a>
+    <a href="explainers.html">Explainers</a>
+    <a href="watchlist.html">Watch List</a>
+    <a href="ask.html">Ask James &amp; Hope</a>
+    <a href="about.html">About</a>
+  </div></details>
+</nav>
+<div class="wrap">
+  <h1 class="center">Is it legal in my state?</h1>
+  <div class="bar"></div>
+  <p class="center" style="color:var(--grey)">Pick your state to see where recreational marijuana, medical marijuana and
+  hemp THC (delta-8, THCA flower, THC gummies and drinks) stand right now, plus the federal dates coming for everyone.</p>
+
+  <div class="chk-pick">
+    <label for="chk-state">Your state</label>
+    <select id="chk-state"><option value="">Choose a state…</option></select>
+  </div>
+
+  <div id="chk-out" hidden>
+    <h2 id="chk-name" class="center" style="margin-top:22px"></h2>
+    <div class="chk-grid">
+      <div class="chk-card" id="c-rec"></div>
+      <div class="chk-card" id="c-med"></div>
+      <div class="chk-card" id="c-hemp"></div>
+    </div>
+    <div class="box" style="margin-top:16px"><p style="margin:0" id="chk-note"></p></div>
+  </div>
+
+  <div class="next-date" style="margin-top:22px">
+    <div class="label">⚖️ FEDERAL HEMP CHANGES: EVERY STATE</div>
+    <div class="what">Nov 12, 2026: delta-8 and other lab-made cannabinoids lose federal hemp status.
+    <span class="countdown" data-target="2026-11-12T00:00:00-05:00" data-kind="law"></span></div>
+    <div class="what" style="margin-top:6px">Dec 11, 2026: a 0.4 mg total-THC cap per container, which covers most gummies,
+    drinks and THCA flower, unless Congress changes it.
+    <span class="countdown" data-target="2026-12-11T00:00:00-05:00" data-kind="law"></span></div>
+    <a href="texas-delta-8-felony-hemp-ban.html" style="color:var(--purple);font-size:.9rem">How the federal hemp ban works →</a>
+  </div>
+
+  <p class="reviewed center" style="margin-top:20px">Last checked <span id="chk-date"></span>. Sources: Ballotpedia,
+  NORML, the Marijuana Policy Project, state regulators and hemp-law trackers, cross-checked. Hemp THC rules are
+  changing fast and sources often disagree, so we only mark a state as banning hemp THC when several current sources
+  agree. This is news and general information, not legal advice. Before you buy, carry or sell, check your state's
+  official rules or talk to a local attorney. <a style="color:var(--purple)" href="ask.html">Spot something out of date? Tell us →</a></p>
+  <p class="center"><a class="btn ghost" href="states.html">See the state map →</a></p>
+</div>
+<footer>
+  News reporting and commentary for educational purposes — not legal advice.
+  · <a href="mailto:jhcannabisnews@zohomail.com">jhcannabisnews@zohomail.com</a>
+</footer>
+<script src="data/legal.js"></script>
+<script>
+  document.getElementById("chk-date").textContent = LEGAL_CHECKED;
+  const sel = document.getElementById("chk-state");
+  Object.entries(LEGAL).sort((a, b) => a[1].n.localeCompare(b[1].n)).forEach(([k, s]) => sel.add(new Option(s.n, k)));
+  const card = (el, icon, cls, head, verdict, body) => {
+    el.className = "chk-card " + cls;
+    el.innerHTML = `<div class="chk-head">${head}</div><div class="chk-verdict">${icon} ${verdict}</div><p>${body}</p>`;
+  };
+  function show(k) {
+    const s = LEGAL[k], out = document.getElementById("chk-out");
+    if (!s) { out.hidden = true; return; }
+    out.hidden = false;
+    document.getElementById("chk-name").textContent = s.n;
+    const rec = {
+      yes: ["✅", "ok", "Legal for adults 21+", "Adults can buy from licensed stores. Limits on how much you can carry and where you can use it still apply."],
+      partial: ["⚠️", "mid", "Possession legal, no stores", "Adults can possess (and in some places grow) a limited amount, but there are no licensed recreational stores yet."],
+      no: ["❌", "bad", "Not legal", "Recreational marijuana is illegal here. Some places have reduced penalties for small amounts, but it can still mean a citation or arrest."]
+    }[s.rec];
+    const med = {
+      full: ["✅", "ok", "Medical program", "Qualifying patients can get a recommendation and buy from licensed medical dispensaries."],
+      limited: ["⚠️", "mid", "Limited (low-THC / CBD only)", "Only low-THC or CBD products for specific conditions. No full medical marijuana program."],
+      none: ["❌", "bad", "No medical program", "There is no legal medical marijuana program in this state."]
+    }[s.med];
+    const hemp = s.hemp === "ban"
+      ? ["❌", "bad", "Banned or tightly restricted", "This state bans or tightly restricts intoxicating hemp THC like delta-8, and in some cases THCA flower. Don't assume a store-bought hemp product is legal here."]
+      : ["⚠️", "mid", "No statewide ban confirmed, for now", "We couldn't confirm a statewide ban, but rules vary and change often, and the federal changes on Nov 12 and Dec 11 apply in every state. Check before you buy."];
+    card(document.getElementById("c-rec"), rec[0], rec[1], "RECREATIONAL MARIJUANA", rec[2], rec[3]);
+    card(document.getElementById("c-med"), med[0], med[1], "MEDICAL MARIJUANA", med[2], med[3]);
+    card(document.getElementById("c-hemp"), hemp[0], hemp[1], "DELTA-8 &amp; HEMP THC", hemp[2], hemp[3]);
+    document.getElementById("chk-note").innerHTML = "<strong>Latest:</strong> " + s.note;
+    try { history.replaceState(null, "", "#" + k); } catch (e) {}
+  }
+  sel.addEventListener("change", () => show(sel.value));
+  const start = location.hash.slice(1).toLowerCase();
+  if (LEGAL[start]) { sel.value = start; show(start); }
+</script>
+<script src="countdown.js"></script>
+</body>
+</html>

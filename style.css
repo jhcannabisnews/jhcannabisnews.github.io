@@ -142,3 +142,16 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 .el-yn p { margin:6px 0 0; color:var(--grey); font-size:.92rem; line-height:1.45; }
 .el-ctx { color:var(--grey); font-size:.92rem; line-height:1.5; }
 @media (max-width:600px) { .el-yn { grid-template-columns:1fr; } }
+
+/* "Is it legal in my state?" checker */
+.chk-pick { max-width:420px; margin:20px auto 0; }
+.chk-pick label { display:block; font-weight:800; margin-bottom:6px; }
+.chk-pick select { width:100%; padding:12px; font-size:1.05rem; border-radius:10px; border:1px solid #3a3a46;
+                   background:var(--panel); color:var(--white); }
+.chk-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:14px; }
+.chk-card { background:var(--panel); border-radius:12px; padding:14px 16px; border-top:4px solid #3a3a46; }
+.chk-card.ok { border-top-color:var(--green); } .chk-card.mid { border-top-color:var(--purple); }
+.chk-card.bad { border-top-color:var(--red); }
+.chk-head { color:var(--grey); font-size:.78rem; font-weight:800; letter-spacing:.08em; }
+.chk-verdict { font-size:1.15rem; font-weight:900; margin:6px 0; }
+.chk-card p { color:var(--grey); font-size:.92rem; line-height:1.45; margin:0; }
