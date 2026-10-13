@@ -103,3 +103,11 @@ article ul { padding-left:22px; }
 article .box { background:var(--panel); border-left:5px solid var(--purple); border-radius:10px;
                padding:16px 18px; margin:22px 0; }
 article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
+
+/* Shorts page: vertical 9:16 players in a grid */
+.shorts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:18px; margin-top:20px; }
+.short { background:var(--panel); border-radius:12px; padding:12px; }
+.short[hidden] { display:none; }
+.short iframe { width:100%; aspect-ratio:9/16; border:0; border-radius:10px; display:block; }
+.short h3 { font-size:1rem; margin:10px 0 4px; }
+.short a { color:var(--purple); font-size:.9rem; }

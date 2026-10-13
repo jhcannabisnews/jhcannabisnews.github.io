@@ -7,7 +7,7 @@ import os
 import re
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MAIN = [("index.html", "Home"), ("episodes.html", "Episodes"),
+MAIN = [("index.html", "Home"), ("episodes.html", "Episodes"), ("shorts.html", "Shorts"),
         ("states.html", "States"), ("headlines.html", "Headlines")]
 MORE = [("explainers.html", "Explainers"), ("watchlist.html", "Watch List"),
         ("ask.html", "Ask James &amp; Hope"), ("about.html", "About")]
