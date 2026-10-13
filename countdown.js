@@ -4,7 +4,7 @@
 const JH_DATES = [
   { when: "2026-10-30T09:00:00-05:00", kind: "event", what: "Texas — Travis County hearing on the THC ban" },
   { when: "2026-11-03T00:00:00-05:00", kind: "event", what: "Election Day — Massachusetts Question 8 & the Idaho amendment" },
-  { when: "2026-11-12T00:00:00-05:00", kind: "law",   what: "Federal — delta-8 & lab-made cannabinoids lose hemp status" },
+  { when: "2026-11-12T00:00:00-05:00", kind: "law",   what: "Federal — cannabinoids the plant can't make (like THC-O) lose hemp status" },
   { when: "2026-12-11T00:00:00-05:00", kind: "law",   what: "Federal — 0.4 mg total-THC cap on hemp products" },
 ];
 
@@ -52,8 +52,8 @@ function jhBanner() {
   b.id = "hemp-banner"; b.href = "watchlist.html";
   b.innerHTML =
     `<span class="hb-label">⏳ FEDERAL HEMP BAN</span>` +
-    `<span>Delta-8 &amp; lab-made THC: <b data-target="2026-11-12T00:00:00-05:00" data-kind="law"></b></span>` +
-    `<span>0.4 mg THC cap: <b data-target="2026-12-11T00:00:00-05:00" data-kind="law"></b></span>` +
+    `<span>Lab-made THC (THC-O): <b data-target="2026-11-12T00:00:00-05:00" data-kind="law"></b></span>` +
+    `<span>Delta-8, THCA, gummies &amp; drinks: <b data-target="2026-12-11T00:00:00-05:00" data-kind="law"></b></span>` +
     `<span class="hb-more">Watch list →</span>`;
   nav.after(b);
 }
