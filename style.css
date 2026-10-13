@@ -111,3 +111,13 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 .short iframe { width:100%; aspect-ratio:9/16; border:0; border-radius:10px; display:block; }
 .short h3 { font-size:1rem; margin:10px 0 4px; }
 .short a { color:var(--purple); font-size:.9rem; }
+
+/* site-wide federal hemp-ban countdown banner (injected by countdown.js) */
+#hemp-banner { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:4px 18px;
+               padding:7px 14px; background:#1d1013; border-bottom:1px solid #3d1d24;
+               color:var(--white); font-size:.88rem; text-decoration:none; }
+#hemp-banner:hover { background:#26141a; }
+#hemp-banner .hb-label { color:var(--red); font-weight:800; letter-spacing:.06em; }
+#hemp-banner b { font-family:Consolas,'Courier New',monospace; }
+#hemp-banner b.live { color:var(--green); }
+#hemp-banner .hb-more { color:var(--purple); font-weight:700; }

@@ -24,7 +24,10 @@ pages = []
 for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
     page = os.path.basename(path)
     t = open(path, encoding="utf-8").read()
-    title = html.unescape(re.search(r"<title>(.*?)</title>", t, re.S).group(1).strip())
+    m = re.search(r"<title>(.*?)</title>", t, re.S)
+    if not m:          # e.g. the Search Console verification file
+        continue
+    title = html.unescape(m.group(1).strip())
     desc = DESC.get(page) or DESC["index.html"]
     url = BASE + ("" if page == "index.html" else page)
     e = lambda s: html.escape(s, quote=True)

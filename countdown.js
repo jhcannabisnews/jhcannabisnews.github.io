@@ -42,6 +42,23 @@ function jhNextDate() {
     `<a href="watchlist.html" style="color:var(--purple);font-size:.9rem">Full watch list →</a>`;
 }
 
+// Site-wide federal hemp-ban banner under the nav (every page loads this script).
+// Shows both deadlines until the day after the second one.
+function jhBanner() {
+  const nav = document.querySelector("nav");
+  if (!nav || document.getElementById("hemp-banner")) return;
+  if (Date.now() > Date.parse("2026-12-12T00:00:00-05:00")) return;
+  const b = document.createElement("a");
+  b.id = "hemp-banner"; b.href = "watchlist.html";
+  b.innerHTML =
+    `<span class="hb-label">⏳ FEDERAL HEMP BAN</span>` +
+    `<span>Delta-8 &amp; lab-made THC: <b data-target="2026-11-12T00:00:00-05:00" data-kind="law"></b></span>` +
+    `<span>0.4 mg THC cap: <b data-target="2026-12-11T00:00:00-05:00" data-kind="law"></b></span>` +
+    `<span class="hb-more">Watch list →</span>`;
+  nav.after(b);
+}
+
+jhBanner();
 jhNextDate();
 jhTick();
 setInterval(jhTick, 1000);
