@@ -51,6 +51,9 @@ for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
         '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">',
         '<meta name="twitter:card" content="summary_large_image">',
         f'<meta name="twitter:image" content="{BASE}og-image.jpg">',
+        # Cloudflare Web Analytics (cookie-free visitor counts; the token is public by design)
+        '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+        """data-cf-beacon='{"token": "af0be1d6d28d4b12a34e29dee0df9b78"}'></script>""",
         END])
     if START in t:
         t2 = re.sub(re.escape(START) + r".*?" + re.escape(END), lambda _: block, t, flags=re.S)
