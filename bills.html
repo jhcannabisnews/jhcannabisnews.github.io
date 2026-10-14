@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Cannabis Bill Tracker: 90th Legislature 2027 — J&H Cannabis News</title>
+<!-- meta -->
+<meta name="description" content="Texas cannabis bill tracker for the 90th Legislature (2027): every marijuana, hemp and THC bill filed, and how far each one has gotten. Updated twice a day.">
+<link rel="canonical" href="https://jhcannabisnews.github.io/bills.html">
+<meta property="og:site_name" content="J&amp;H Cannabis News">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Texas Cannabis Bill Tracker: 90th Legislature 2027 — J&amp;H Cannabis News">
+<meta property="og:description" content="Texas cannabis bill tracker for the 90th Legislature (2027): every marijuana, hemp and THC bill filed, and how far each one has gotten. Updated twice a day.">
+<meta property="og:url" content="https://jhcannabisnews.github.io/bills.html">
+<meta property="og:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jhcannabisnews.github.io/og-image.jpg">
+<!-- /meta -->
+<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <img src="logo.png" alt=""><span class="brand">J&amp;H CANNABIS NEWS</span>
+  <a href="index.html">Home</a>
+  <a href="checker.html">Is It Legal?</a>
+  <a href="bills.html" class="active">TX Bills</a>
+  <a href="episodes.html">Episodes</a>
+  <a href="shorts.html">Shorts</a>
+  <a href="states.html">States</a>
+  <a href="headlines.html">Headlines</a>
+  <details><summary>More ▾</summary><div class="menu">
+    <a href="election.html">🗳️ Election 2026</a>
+    <a href="explainers.html">Explainers</a>
+    <a href="watchlist.html">Watch List</a>
+    <a href="ask.html">Ask James &amp; Hope</a>
+    <a href="about.html">About</a>
+  </div></details>
+</nav>
+<div class="wrap">
+  <h1 class="center">🤠 Texas Cannabis Bill Tracker</h1>
+  <div class="bar"></div>
+  <p class="center" style="color:var(--grey)">Every marijuana, hemp and THC bill filed in the Texas Legislature, and how far each
+  one has gotten. Updated automatically twice a day from the Legislature's official data.</p>
+
+  <div class="next-date" id="bt-next" style="text-align:center"></div>
+
+  <div class="bt-tabs" id="bt-tabs">
+    <button data-s="90R" class="on">90th Legislature · 2027</button>
+    <button data-s="89R">89th · 2025 (last session)</button>
+  </div>
+
+  <div class="bt-stats" id="bt-stats"></div>
+
+  <div class="bt-tools">
+    <input id="bt-q" type="search" placeholder="Search bills (e.g. decriminalize, hemp, HB 28, author)">
+    <select id="bt-f">
+      <option value="all">All bills</option>
+      <option value="moving">Moving (out of committee or further)</option>
+      <option value="passed">Passed a chamber</option>
+      <option value="law">Became law</option>
+      <option value="dead">Died / vetoed</option>
+    </select>
+  </div>
+  <div id="bt-list"></div>
+  <p class="center" id="bt-updated" style="color:var(--grey);font-size:.85rem"></p>
+
+  <h2 style="margin-top:34px">📜 How close Texas came</h2>
+  <div class="box">
+    <p><strong>2019, 2021 and 2023:</strong> the Texas House passed bills by Rep. Joe Moody to make small amounts of
+    marijuana a ticket instead of jail (HB 63 in 2019, HB 218 in 2023). Each time, Lt. Gov. Dan Patrick, who controls the
+    Senate's agenda, kept them from ever getting a Senate vote. In 2019 he declared the bill "dead in the Texas Senate."</p>
+    <p><strong>2025:</strong> the Legislature passed a total THC ban (SB 3). Gov. Greg Abbott vetoed it, saying regulate,
+    don't prohibit.</p>
+    <p style="margin-bottom:0"><strong>2026:</strong> the state health department banned delta-8, delta-10, THCP and THCA flower by
+    rule anyway, starting July 31. <a style="color:var(--purple)" href="texas-delta-8-felony-hemp-ban.html">The full story →</a></p>
+  </div>
+
+  <h2>How a Texas bill becomes law</h2>
+  <ol class="bt-how">
+    <li><strong>Filed:</strong> early filing opens the Monday after the November election (Nov 9, 2026).</li>
+    <li><strong>Committee:</strong> most bills die here without a hearing or a vote.</li>
+    <li><strong>Passes its first chamber:</strong> House or Senate floor vote.</li>
+    <li><strong>The other chamber:</strong> committee, then a floor vote. In the Senate, the Lieutenant Governor decides what moves.</li>
+    <li><strong>Governor:</strong> signs it, lets it become law without signing, or vetoes it.</li>
+  </ol>
+  <p class="reviewed">Source: Texas Legislative Council bill histories (ftp.legis.state.tx.us). A bill is listed when its title or
+  official subject mentions marijuana, cannabis, hemp, THC, cannabidiol or the Compassionate Use Program. Stages are worked out
+  from each bill's official action list; check the linked bill page for the exact status. Other states are coming next.
+  News reporting, not legal advice.</p>
+</div>
+<footer>
+  News reporting and commentary for educational purposes — not legal advice.
+  · <a href="mailto:jhcannabisnews@zohomail.com">jhcannabisnews@zohomail.com</a>
+</footer>
+<script>
+const MILESTONES = [
+  ["2026-11-09T08:00:00-06:00", "Early bill filing opens for 2027"],
+  ["2027-01-12T12:00:00-06:00", "The 90th Legislature convenes"],
+  ["2027-03-12T18:00:00-06:00", "Deadline to file most bills"],
+  ["2027-05-31T23:59:00-05:00", "Last day of the regular session (sine die)"],
+];
+const SESSION_END = { "89R": "2025-06-02", "90R": "2027-06-01" };
+const STEPS = o => o === "House"
+  ? ["Filed", "Committee", "Passed House", "Senate", "Passed Senate", "Governor", "Law"]
+  : ["Filed", "Committee", "Passed Senate", "House", "Passed House", "Governor", "Law"];
+function stepIndex(b) {
+  const s = b.stage, o = b.id.startsWith("H") ? "House" : "Senate", x = o === "House" ? "Senate" : "House";
+  return ({"Filed": 0, "In committee": 1, "Out of committee": 1, [`Passed ${o}`]: 2, [`${x} committee`]: 3,
+           [`Passed ${x}`]: 4, "To governor": 5, "Law": 6, "Vetoed": 5})[s] ?? 0;
+}
+function status(b, session) {
+  const over = Date.now() > Date.parse(SESSION_END[session]);
+  if (b.stage === "Law") return ["Became law", "law"];
+  if (b.stage === "Vetoed") return ["Vetoed", "dead"];
+  if (over && b.stage !== "To governor") return ["Died", "dead"];
+  return [b.stage, "live"];
+}
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let DATA = {}, cur = "90R";
+
+function nextMilestone() {
+  const now = Date.now(), m = MILESTONES.find(m => Date.parse(m[0]) > now);
+  const box = document.getElementById("bt-next");
+  if (!m) { box.remove(); return; }
+  box.innerHTML = `<div class="label">⏱ NEXT: ${esc(m[1]).toUpperCase()}</div>
+    <div class="countdown" data-target="${m[0]}" data-kind="event"></div>`;
+}
+async function load(s) {
+  if (!DATA[s]) {
+    try { DATA[s] = await (await fetch(`data/tx_bills_${s}.json?t=` + Date.now())).json(); }
+    catch (e) { DATA[s] = { bills: [], updated: null }; }
+  }
+  render();
+}
+function render() {
+  const d = DATA[cur], q = document.getElementById("bt-q").value.trim().toLowerCase(), f = document.getElementById("bt-f").value;
+  const bills = d.bills.map(b => ({ ...b, st: status(b, cur), idx: stepIndex(b) }));
+  const n = k => bills.filter(k).length;
+  document.getElementById("bt-stats").innerHTML = [
+    ["Bills filed", bills.length], ["Out of committee", n(b => b.idx >= 2 || b.stage === "Out of committee")],
+    ["Passed a chamber", n(b => b.idx >= 2)], ["Became law", n(b => b.st[1] === "law")]]
+    .map(([l, v]) => `<div><b>${v}</b><span>${l}</span></div>`).join("");
+  let list = bills.filter(b => !q || (b.id + " " + b.caption + " " + b.authors).toLowerCase().includes(q));
+  list = list.filter(b => f === "all" || (f === "moving" && (b.idx >= 2 || b.stage === "Out of committee"))
+    || (f === "passed" && b.idx >= 2) || (f === "law" && b.st[1] === "law") || (f === "dead" && b.st[1] === "dead"));
+  const box = document.getElementById("bt-list");
+  if (!d.bills.length) {
+    box.innerHTML = `<div class="el-pending">No bills yet. Early filing for the 2027 session opens <b>November 9, 2026</b>,
+      and bills will appear here automatically that morning. Meanwhile, see what was filed in 2025 on the "89th" tab.</div>`;
+  } else if (!list.length) {
+    box.innerHTML = `<div class="el-pending">No bills match.</div>`;
+  } else {
+    box.innerHTML = list.map(b => {
+      const o = b.id.startsWith("H") ? "House" : "Senate", steps = STEPS(o);
+      const bar = steps.map((s, i) => `<i class="${i <= b.idx ? (b.st[1] === "dead" ? "x" : "on") : ""}" title="${s}"></i>`).join("");
+      return `<div class="bt-bill">
+        <div class="bt-head"><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.id)}</a>
+          <span class="bt-st ${b.st[1]}">${esc(b.st[0])}</span></div>
+        <p class="bt-cap">${esc(b.caption.replace(/^Relating to /, "").replace(/^./, c => c.toUpperCase()))}</p>
+        <div class="bt-bar">${bar}</div>
+        <div class="bt-steps"><span>${steps[0]}</span><span>${steps[steps.length - 1]}</span></div>
+        <p class="bt-meta">By ${esc(b.authors || "—")} · Filed ${esc(b.filed)} · Latest: ${esc(b.last_action)}</p>
+      </div>`;
+    }).join("");
+  }
+  document.getElementById("bt-updated").textContent = d.updated
+    ? "Last updated " + new Date(d.updated).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "";
+}
+document.querySelectorAll("#bt-tabs button").forEach(btn => btn.onclick = () => {
+  document.querySelectorAll("#bt-tabs button").forEach(b => b.classList.toggle("on", b === btn));
+  cur = btn.dataset.s; load(cur);
+});
+document.getElementById("bt-q").oninput = render;
+document.getElementById("bt-f").onchange = render;
+nextMilestone();
+load(cur);
+</script>
+<script src="countdown.js"></script>
+</body>
+</html>

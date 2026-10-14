@@ -22,6 +22,7 @@ DESC = {
     "election.html": "Cannabis on the ballot Nov 3, 2026: Massachusetts Question 8, Idaho HJR 4 and Houston Proposition A. What yes and no mean, plus live election-night results.",
     "checker.html": "Is weed legal in my state? Check recreational marijuana, medical marijuana and delta-8 / hemp THC laws in all 50 states, plus the federal hemp ban dates. Updated October 2026.",
     "federal-hemp-ban-explained.html": "The federal hemp ban explained: what happens to delta-8, THCA flower, THC gummies and drinks on Nov 12 and Dec 11, 2026, how the ban got delayed, and what it means for you.",
+    "bills.html": "Texas cannabis bill tracker for the 90th Legislature (2027): every marijuana, hemp and THC bill filed, and how far each one has gotten. Updated twice a day.",
     "ask.html": "Send James & Hope your cannabis-law question about your state. We answer the best ones on the show.",
     "about.html": "About J&H Cannabis News: who James & Hope are, how the show is made, and our sources.",
 }

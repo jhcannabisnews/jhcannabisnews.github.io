@@ -1,0 +1,30 @@
+name: Refresh Texas bill tracker
+
+on:
+  schedule:
+    - cron: "15 11,23 * * *"   # 6:15 AM and 6:15 PM Central (CDT), after the Legislature's overnight update
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tx-bills
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Texas cannabis bills (90th Legislature)
+        run: python3 tools/tx_bills.py 90R
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tx_bills_90R.json data/tx_cache_90R.json
+          git diff --cached --quiet || git commit -m "Refresh Texas bill tracker"
+          git pull --rebase -q || true
+          git push

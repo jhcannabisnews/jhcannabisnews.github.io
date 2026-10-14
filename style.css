@@ -155,3 +155,31 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 .chk-head { color:var(--grey); font-size:.78rem; font-weight:800; letter-spacing:.08em; }
 .chk-verdict { font-size:1.15rem; font-weight:900; margin:6px 0; }
 .chk-card p { color:var(--grey); font-size:.92rem; line-height:1.45; margin:0; }
+
+/* Texas bill tracker */
+.bt-tabs { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+.bt-tabs button { background:var(--panel); color:var(--grey); border:1px solid #3a3a46; border-radius:999px;
+                  padding:9px 16px; font-weight:800; cursor:pointer; }
+.bt-tabs button.on { background:var(--red); color:#fff; border-color:var(--red); }
+.bt-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:16px; }
+.bt-stats div { background:var(--panel); border-radius:12px; padding:12px; text-align:center; }
+.bt-stats b { display:block; font-size:1.7rem; }
+.bt-stats span { color:var(--grey); font-size:.8rem; font-weight:700; }
+.bt-tools { display:flex; gap:10px; margin:16px 0 6px; flex-wrap:wrap; }
+.bt-tools input, .bt-tools select { flex:1 1 220px; padding:11px; border-radius:10px; border:1px solid #3a3a46;
+                                    background:var(--panel); color:var(--white); font-size:.95rem; }
+.bt-bill { background:var(--panel); border-radius:12px; padding:14px 16px; margin-top:12px; }
+.bt-head { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.bt-head a { color:var(--white); font-weight:900; font-size:1.1rem; text-decoration:none; }
+.bt-head a:hover { color:var(--purple); }
+.bt-st { font-size:.75rem; font-weight:900; padding:3px 9px; border-radius:6px; background:#2b2b35; color:var(--grey); }
+.bt-st.law { background:#173a24; color:var(--green); } .bt-st.dead { background:#3a171c; color:var(--red); }
+.bt-st.live { background:#2a1f3d; color:var(--purple); }
+.bt-cap { margin:8px 0 10px; line-height:1.45; }
+.bt-bar { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.bt-bar i { height:8px; border-radius:4px; background:#2b2b35; }
+.bt-bar i.on { background:var(--purple); } .bt-bar i.x { background:#6b2a32; }
+.bt-steps { display:flex; justify-content:space-between; color:var(--grey); font-size:.72rem; margin-top:4px; }
+.bt-meta { color:var(--grey); font-size:.85rem; margin:8px 0 0; }
+.bt-how li { margin:6px 0; line-height:1.5; }
+@media (max-width:600px) { .bt-stats { grid-template-columns:repeat(2,1fr); } }

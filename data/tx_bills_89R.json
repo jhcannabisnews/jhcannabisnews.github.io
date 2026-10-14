@@ -1,0 +1,1838 @@
+{
+ "session": "89R",
+ "updated": "2026-10-14T08:32:42+00:00",
+ "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
+ "count": 45,
+ "bills": [
+  {
+   "id": "HB 28",
+   "caption": "Relating to the regulation of consumable hemp products and providing for the transfer of regulatory functions; requiring a registration; imposing fees; creating criminal offenses; providing an administrative penalty.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Health--General (I0385)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Tobacco Products (I0818)",
+    "HEMP (S0907)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "ALCOHOLIC BEVERAGE COMMISSION, TEXAS (V0472)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "King",
+   "last_action": "04/07/2025 H Left pending in committee",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Referred to State Affairs"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Scheduled for public hearing on . . ."
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Considered in public hearing"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Committee substitute considered in committee"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Testimony taken/registration(s) recorded in committee"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Left pending in committee"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB00028I.HTM",
+   "stage": "In committee",
+   "filed": "3/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB28"
+  },
+  {
+   "id": "HB 46",
+   "caption": "Relating to the medical use of low-THC cannabis under and the administration of the Texas Compassionate-Use Program; requiring registration.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "Protection of Personal Information (I0003)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "King | Moody | Oliverson | Plesa | Lalani",
+   "last_action": "06/20/2025 E Effective on 9/1/25",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "6/2/2025",
+     "description": "Reported enrolled"
+    },
+    {
+     "chamber": "H",
+     "date": "6/2/2025",
+     "description": "Signed in the House"
+    },
+    {
+     "chamber": "S",
+     "date": "6/2/2025",
+     "description": "Signed in the Senate"
+    },
+    {
+     "chamber": "E",
+     "date": "6/2/2025",
+     "description": "Sent to the Governor"
+    },
+    {
+     "chamber": "E",
+     "date": "6/20/2025",
+     "description": "Signed by the Governor"
+    },
+    {
+     "chamber": "E",
+     "date": "6/20/2025",
+     "description": "Effective on 9/1/25"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB00046F.HTM",
+   "stage": "Law",
+   "filed": "3/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB46"
+  },
+  {
+   "id": "HB 848",
+   "caption": "Relating to the criminal penalties for possession or delivery of marihuana concentrate.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "MARIHUANA (S3105)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Moody",
+   "last_action": "03/25/2025 H Referred directly to subcommittee by chair",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/5/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/5/2025",
+     "description": "Referred to Criminal Jurisprudence"
+    },
+    {
+     "chamber": "H",
+     "date": "3/25/2025",
+     "description": "Referred directly to subcommittee by chair"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB00848I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB848"
+  },
+  {
+   "id": "HB 1113",
+   "caption": "Relating to the production and regulation of hemp; providing an administrative penalty; requiring a permit to conduct certain research involving hemp; authorizing a fee; creating a criminal offense.",
+   "subjects": [
+    "Agriculture (I0020)",
+    "Crimes--Drugs (I0185)",
+    "Education--Higher--Institutions & Programs (I0223)",
+    "HEMP (S0907)",
+    "AGRICULTURE, DEPARTMENT OF (V0566)"
+   ],
+   "authors": "Cain",
+   "last_action": "03/18/2025 H Left pending in committee",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/7/2025",
+     "description": "Referred to Agriculture & Livestock"
+    },
+    {
+     "chamber": "H",
+     "date": "3/18/2025",
+     "description": "Scheduled for public hearing on . . ."
+    },
+    {
+     "chamber": "H",
+     "date": "3/18/2025",
+     "description": "Considered in public hearing"
+    },
+    {
+     "chamber": "H",
+     "date": "3/18/2025",
+     "description": "Testimony taken/registration(s) recorded in committee"
+    },
+    {
+     "chamber": "H",
+     "date": "3/18/2025",
+     "description": "Left pending in committee"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01113I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1113"
+  },
+  {
+   "id": "HB 1146",
+   "caption": "Relating to the medical use of low-THC cannabis by patients with certain medical conditions.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)"
+   ],
+   "authors": "Morales Shaw",
+   "last_action": "03/07/2025 H Referred to s/c on Dis Prev & Women's & Children's Health by Speaker: Mar  7 2025  2:33PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/7/2025",
+     "description": "Referred to s/c on Dis Prev & Women's & Children's Health by Speaker"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01146I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1146"
+  },
+  {
+   "id": "HB 1208",
+   "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license; creating a criminal offense; imposing a tax.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Minors--Crimes Against (I0532)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "State Finances--Management & Control (I0748)",
+    "Taxation--Sales (I0800)",
+    "MARIHUANA (S3105)",
+    "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Gonz\u00e1lez, Jessica",
+   "last_action": "03/10/2025 H Referred to Licensing & Administrative Procedures: Mar 10 2025  2:24PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/10/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/10/2025",
+     "description": "Referred to Licensing & Administrative Procedures"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01208I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1208"
+  },
+  {
+   "id": "HB 1504",
+   "caption": "Relating to authorizing the possession, use, cultivation, distribution, transportation, and delivery of medical cannabis for medical use by qualifying patients with certain debilitating medical conditions and the licensing of dispensing organizations and cannabis testing facilities; authorizing fees.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health Care Providers (I0387)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Reynolds",
+   "last_action": "03/12/2025 H Referred to Public Health: Mar 12 2025 11:15AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "12/4/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/12/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/12/2025",
+     "description": "Referred to Public Health"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01504I.HTM",
+   "stage": "In committee",
+   "filed": "12/4/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1504"
+  },
+  {
+   "id": "HB 1574",
+   "caption": "Relating to the medical use of low-THC cannabis by patients with certain medical conditions.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)"
+   ],
+   "authors": "Jones, Venton",
+   "last_action": "03/12/2025 H Referred to s/c on Dis Prev & Women's & Children's Health by Speaker: Mar 12 2025 11:15AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "12/11/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/12/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/12/2025",
+     "description": "Referred to s/c on Dis Prev & Women's & Children's Health by Speaker"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01574I.HTM",
+   "stage": "In committee",
+   "filed": "12/11/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1574"
+  },
+  {
+   "id": "HB 1750",
+   "caption": "Relating to the processing, manufacture, and sale of hemp products for smoking.",
+   "subjects": [
+    "Agriculture (I0020)",
+    "HEMP (S0907)"
+   ],
+   "authors": "Rosenthal",
+   "last_action": "03/14/2025 H Referred to Agriculture & Livestock: Mar 14 2025  2:36PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "1/7/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Referred to Agriculture & Livestock"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01750I.HTM",
+   "stage": "In committee",
+   "filed": "1/7/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1750"
+  },
+  {
+   "id": "HB 1763",
+   "caption": "Relating to repealing certain offenses and removing certain regulations relating to marihuana, cannabis, cannabinoids, synthetic cannabinoids, and paraphernalia.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Criminal Procedure--General (I0208)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)",
+    "AGRICULTURE, DEPARTMENT OF (V0566)",
+    "ALCOHOLIC BEVERAGE COMMISSION, TEXAS (V0472)",
+    "FAMILY & PROTECTIVE SERVICES, DEPARTMENT OF (V0461)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Rosenthal",
+   "last_action": "03/14/2025 H Referred to Criminal Jurisprudence: Mar 14 2025  2:36PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "1/7/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Referred to Criminal Jurisprudence"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01763I.HTM",
+   "stage": "In committee",
+   "filed": "1/7/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1763"
+  },
+  {
+   "id": "HB 1797",
+   "caption": "Relating to drug testing and prescription drug policies for employees and independent contractors of state agencies and political subdivisions regarding the medical use of low-THC cannabis and hemp.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Labor--General (I0500)",
+    "Political Subdivisions (I0588)",
+    "State Agencies, Boards & Commissions (I0749)",
+    "State Employees (I0626)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)"
+   ],
+   "authors": "Bucy",
+   "last_action": "03/14/2025 H Referred to State Affairs: Mar 14 2025  2:36PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "1/9/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB01797I.HTM",
+   "stage": "In committee",
+   "filed": "1/9/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1797"
+  },
+  {
+   "id": "HB 2155",
+   "caption": "Relating to a prohibition on the sale, transfer, or delivery of consumable hemp products; creating a criminal offense.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "FOOD (S0761)",
+    "HEMP (S0907)",
+    "SMOKING (S2294)"
+   ],
+   "authors": "Shaheen",
+   "last_action": "03/14/2025 H Referred to State Affairs: Mar 14 2025  2:36PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "1/28/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB02155I.HTM",
+   "stage": "In committee",
+   "filed": "1/28/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2155"
+  },
+  {
+   "id": "HB 2871",
+   "caption": "Relating to the criminal penalties for possession of marihuana; changing the eligibility for community supervision.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "MANDATORY & COMMUNITY SUPERVISION (S2314)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Garcia, Josey",
+   "last_action": "04/01/2025 H Referred directly to subcommittee by chair",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/14/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/19/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/19/2025",
+     "description": "Referred to Criminal Jurisprudence"
+    },
+    {
+     "chamber": "H",
+     "date": "4/1/2025",
+     "description": "Referred directly to subcommittee by chair"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB02871I.HTM",
+   "stage": "In committee",
+   "filed": "2/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2871"
+  },
+  {
+   "id": "HB 2958",
+   "caption": "Relating to the drug testing of certain persons seeking benefits under the Temporary Assistance for Needy Families (TANF) program.",
+   "subjects": [
+    "Human Services--Direct Assistance (I0900)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "MARIHUANA (S3105)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)"
+   ],
+   "authors": "Slawson",
+   "last_action": "03/20/2025 H Referred to Human Services: Mar 20 2025 11:50AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/18/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Referred to Human Services"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB02958I.HTM",
+   "stage": "In committee",
+   "filed": "2/18/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2958"
+  },
+  {
+   "id": "HB 2972",
+   "caption": "Relating to the medical use of low-THC cannabis by patients with certain medical conditions.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Women (I0925)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Plesa",
+   "last_action": "03/20/2025 H Referred to s/c on Dis Prev & Women's & Children's Health by Speaker: Mar 20 2025 11:50AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/18/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Referred to s/c on Dis Prev & Women's & Children's Health by Speaker"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB02972I.HTM",
+   "stage": "In committee",
+   "filed": "2/18/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2972"
+  },
+  {
+   "id": "HB 2975",
+   "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license or registration; creating a criminal offense; imposing a tax.",
+   "subjects": [
+    "Agriculture (I0020)",
+    "Civil Remedies & Liabilities (I0065)",
+    "Crimes--Drugs (I0185)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Property Interests--Landlord & Tenant (I0610)",
+    "State Finances--Management & Control (I0748)",
+    "Taxation--Sales (I0800)",
+    "TEXAS REGULATION OF CANNABIS ACT (PQ06I)",
+    "IDENTIFICATION CARDS (S0074)",
+    "MARIHUANA (S3105)",
+    "SIGNS (S0235)",
+    "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Bucy",
+   "last_action": "03/20/2025 H Referred to Licensing & Administrative Procedures: Mar 20 2025 11:50AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/18/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Referred to Licensing & Administrative Procedures"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB02975I.HTM",
+   "stage": "In committee",
+   "filed": "2/18/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2975"
+  },
+  {
+   "id": "HB 3122",
+   "caption": "Relating to a defense to prosecution for the possession of certain consumable hemp products containing a controlled substance or marihuana.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Criminal Procedure--General (I0208)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Collier",
+   "last_action": "03/20/2025 H Referred to Criminal Jurisprudence: Mar 20 2025 11:50AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/20/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Referred to Criminal Jurisprudence"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB03122I.HTM",
+   "stage": "In committee",
+   "filed": "2/20/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB3122"
+  },
+  {
+   "id": "HB 3242",
+   "caption": "Relating to the criminal and licensing consequences of certain offenses relating to the possession of marihuana, certain tetrahydrocannabinols, certain synthetic cannabinoids, and drug paraphernalia; imposing a fee.",
+   "subjects": [
+    "Courts--Judges (I0140)",
+    "Courts--Justice (I0110)",
+    "Courts--Municipal (I0100)",
+    "Crimes--Drugs (I0185)",
+    "Criminal Procedure--General (I0208)",
+    "CRIMINAL RECORDS (S0008)",
+    "DEFERRED ADJUDICATION (S6185)",
+    "EXPUNCTION OF RECORDS (S0189)",
+    "MARIHUANA (S3105)",
+    "PEACE OFFICERS (S0007)",
+    "SYNTHETIC CANNABINOIDS (S0718)"
+   ],
+   "authors": "Moody",
+   "last_action": "04/15/2025 H Referred directly to subcommittee by chair",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "2/24/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/20/2025",
+     "description": "Referred to Criminal Jurisprudence"
+    },
+    {
+     "chamber": "H",
+     "date": "4/15/2025",
+     "description": "Referred directly to subcommittee by chair"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB03242I.HTM",
+   "stage": "In committee",
+   "filed": "2/24/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB3242"
+  },
+  {
+   "id": "HB 3729",
+   "caption": "Relating to the creation of a public information campaign to raise awareness of the Texas Compassionate Use Program.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "MARIHUANA (S3105)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Reynolds",
+   "last_action": "03/26/2025 H Referred to Public Health: Mar 26 2025 11:31AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/4/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/26/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/26/2025",
+     "description": "Referred to Public Health"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB03729I.HTM",
+   "stage": "In committee",
+   "filed": "3/4/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB3729"
+  },
+  {
+   "id": "HB 3991",
+   "caption": "Relating to misconduct by public school employees and to persons who must be listed in the registry of persons not eligible for employment in public schools.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Crimes--Miscellaneous (I0200)",
+    "Education--Primary & Secondary--Charter Schools (I0245)",
+    "Education--Primary & Secondary--Teachers (I0242)",
+    "Minors--Health & Safety (I0533)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Davis, Yvonne",
+   "last_action": "03/27/2025 H Referred to Public Education: Mar 27 2025 11:57AM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/6/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/27/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/27/2025",
+     "description": "Referred to Public Education"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB03991I.HTM",
+   "stage": "In committee",
+   "filed": "3/6/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB3991"
+  },
+  {
+   "id": "HB 4242",
+   "caption": "Relating to the production, sale, distribution, delivery, and regulation of hemp; creating a criminal offense.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "State Finances--Management & Control (I0748)",
+    "HEMP (S0907)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "Cain",
+   "last_action": "03/31/2025 H Referred to State Affairs: Mar 31 2025  4:34PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/10/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/31/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/31/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB04242I.HTM",
+   "stage": "In committee",
+   "filed": "3/10/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB4242"
+  },
+  {
+   "id": "HB 4352",
+   "caption": "Relating to the removal of a public school student from  the classroom for engaging in conduct involving the possession of certain prohibited substances.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Education--Primary & Secondary--Discipline (I0244)",
+    "ALTERNATIVE EDUCATION PROGRAMS (S0283)",
+    "ELECTRONIC EQUIPMENT (S0554)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Dutton",
+   "last_action": "04/01/2025 H Referred to Public Education: Apr  1 2025 12:28PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/11/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/1/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/1/2025",
+     "description": "Referred to Public Education"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB04352I.HTM",
+   "stage": "In committee",
+   "filed": "3/11/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB4352"
+  },
+  {
+   "id": "HB 4376",
+   "caption": "Relating to the modification of a visitation plan for a child in the conservatorship of the Department of Family and Protective Services.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Family--Child Protection (I0351)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "MARIHUANA (S3105)",
+    "FAMILY & PROTECTIVE SERVICES, DEPARTMENT OF (V0461)"
+   ],
+   "authors": "Villalobos",
+   "last_action": "04/01/2025 H Referred to s/c on Family & Fiduciary Relationships by Speaker: Apr  1 2025 12:28PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/11/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/1/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/1/2025",
+     "description": "Referred to s/c on Family & Fiduciary Relationships by Speaker"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB04376I.HTM",
+   "stage": "In committee",
+   "filed": "3/11/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB4376"
+  },
+  {
+   "id": "HB 4833",
+   "caption": "Relating to the removal of a public school student from the classroom for engaging in certain conduct and requiring a drug prevention and intervention program.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Crimes--Juvenile (I0190)",
+    "Education--Primary & Secondary--Charter Schools (I0245)",
+    "Education--Primary & Secondary--Curriculum (I0228)",
+    "Education--Primary & Secondary--Discipline (I0244)",
+    "Education--School Districts (I0220)",
+    "Tobacco Products (I0818)",
+    "ALTERNATIVE EDUCATION PROGRAMS (S0283)",
+    "MARIHUANA (S3105)",
+    "STAFF DEVELOPMENT & TRAINING (S0317)"
+   ],
+   "authors": "Davis, Aicha",
+   "last_action": "04/03/2025 H Referred to Public Education: Apr  3 2025 12:38PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/13/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/3/2025",
+     "description": "Referred to Public Education"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB04833I.HTM",
+   "stage": "In committee",
+   "filed": "3/13/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB4833"
+  },
+  {
+   "id": "HB 4879",
+   "caption": "Relating to the creation of a grant program to assist local law enforcement agencies in testing certain substances suspected of containing delta-9 tetrahydrocannabinol.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Law Enforcement (I0510)",
+    "State Finances--Management & Control (I0748)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "MARIHUANA (S3105)",
+    "CRIMINAL JUSTICE DIVISION, GOVERNOR'S OFFICE (V0963)"
+   ],
+   "authors": "King",
+   "last_action": "05/22/2025 S Referred to State Affairs",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "5/15/2025",
+     "description": "Record vote"
+    },
+    {
+     "chamber": "H",
+     "date": "5/15/2025",
+     "description": "Statement(s) of vote recorded in Journal"
+    },
+    {
+     "chamber": "H",
+     "date": "5/15/2025",
+     "description": "Reported engrossed"
+    },
+    {
+     "chamber": "S",
+     "date": "5/15/2025",
+     "description": "Received from the House"
+    },
+    {
+     "chamber": "S",
+     "date": "5/22/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "5/22/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB04879E.HTM",
+   "stage": "Senate committee",
+   "filed": "3/13/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB4879"
+  },
+  {
+   "id": "HB 5024",
+   "caption": "Relating to the regulation of cigarettes and tobacco products, including the definitions of cigarettes and tobacco products.",
+   "subjects": [
+    "Minors--Health & Safety (I0533)",
+    "Tobacco Products (I0818)",
+    "HEMP (S0907)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)"
+   ],
+   "authors": "Hickland",
+   "last_action": "04/03/2025 H Referred to Public Health: Apr  3 2025 12:38PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/13/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/3/2025",
+     "description": "Referred to Public Health"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB05024I.HTM",
+   "stage": "In committee",
+   "filed": "3/13/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB5024"
+  },
+  {
+   "id": "HB 5307",
+   "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and the local regulation of cannabis establishments; providing for expunction of records relating to certain decriminalized conduct; authorizing the imposition of fees; requiring an occupational license; creating a criminal offense; imposing a tax.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Ethics (I0345)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Taxation--Sales (I0800)",
+    "CRIMINAL RECORDS (S0008)",
+    "EXPUNCTION OF RECORDS (S0189)",
+    "IDENTIFICATION CARDS (S0074)",
+    "MARIHUANA (S3105)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "RECORDS MANAGEMENT (S0205)",
+    "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)"
+   ],
+   "authors": "Talarico",
+   "last_action": "04/07/2025 H Referred to Licensing & Administrative Procedures: Apr  7 2025  5:28PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Referred to Licensing & Administrative Procedures"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB05307I.HTM",
+   "stage": "In committee",
+   "filed": "3/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB5307"
+  },
+  {
+   "id": "HB 5643",
+   "caption": "Relating to the production, sale, distribution, delivery, and regulation of hemp; creating a criminal offense; imposing a tax.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "State Finances--Management & Control (I0748)",
+    "HEMP (S0907)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "Cain",
+   "last_action": "04/07/2025 H Referred to State Affairs: Apr  7 2025  5:28PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "3/14/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "4/7/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HB05643I.HTM",
+   "stage": "In committee",
+   "filed": "3/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB5643"
+  },
+  {
+   "id": "HJR 70",
+   "caption": "Proposing a constitutional amendment to direct the legislature to authorize and regulate the possession, cultivation, and sale of cannabis for medical use.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health Care Providers (I0387)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Resolutions--Constitutional Amendments (I0661)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)"
+   ],
+   "authors": "Reynolds",
+   "last_action": "03/04/2025 H Referred to Public Health: Mar  4 2025  3:37PM",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "H",
+     "date": "3/4/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "H",
+     "date": "3/4/2025",
+     "description": "Referred to Public Health"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/HJ00070I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HJR70"
+  },
+  {
+   "id": "SB 3",
+   "caption": "Relating to the regulation of products derived from hemp, including consumable hemp products and the hemp-derived cannabinoids contained in those products; requiring occupational licenses and permits; imposing fees; creating criminal offenses; authorizing an administrative penalty.",
+   "subjects": [
+    "Alcoholic Beverage Regulation (I0025)",
+    "Business & Commerce--General (I0050)",
+    "Business & Commerce--Trade Practices (I0006)",
+    "Crimes--Drugs (I0185)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Health--General (I0385)",
+    "Minors--Crimes Against (I0532)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Taxation--Sales (I0800)",
+    "ADVERTISING (S2680)",
+    "BEER, BREWERIES, & BREWPUBS (S0757)",
+    "BEVERAGE CONTAINERS (S6058)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "PERMITS (S0011)",
+    "SYNTHETIC CANNABINOIDS (S0718)",
+    "ALCOHOLIC BEVERAGE COMMISSION, TEXAS (V0472)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "Perry",
+   "last_action": "06/22/2025 E Vetoed by the Governor",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "5/26/2025",
+     "description": "Senate concurs in House amendment(s)-reported"
+    },
+    {
+     "chamber": "S",
+     "date": "5/26/2025",
+     "description": "Reported enrolled"
+    },
+    {
+     "chamber": "S",
+     "date": "5/26/2025",
+     "description": "Signed in the Senate"
+    },
+    {
+     "chamber": "H",
+     "date": "5/27/2025",
+     "description": "Signed in the House"
+    },
+    {
+     "chamber": "E",
+     "date": "5/27/2025",
+     "description": "Sent to the Governor"
+    },
+    {
+     "chamber": "E",
+     "date": "6/22/2025",
+     "description": "Vetoed by the Governor"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00003F.HTM",
+   "stage": "Vetoed",
+   "filed": "2/20/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB3"
+  },
+  {
+   "id": "SB 170",
+   "caption": "Relating to authorizing the possession, use, cultivation, distribution, delivery, sale, and research of medical cannabis for medical use by patients with certain medical conditions and the licensing of medical cannabis organizations; authorizing fees.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Governor (I0375)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "MEDICAL CANNABIS RESEARCH ACT (PO881)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PARENTAL RIGHTS (S0095)",
+    "PHYSICIANS (S1282)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "MEDICAL CANNABIS RESEARCH ADVISORY BOARD (VC6Y5)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "Men\u00e9ndez",
+   "last_action": "02/03/2025 S Referred to Health & Human Services",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "11/12/2024",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Referred to Health & Human Services"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00170I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB170"
+  },
+  {
+   "id": "SB 259",
+   "caption": "Relating to the possession, use, cultivation, distribution, transportation, and delivery of medical cannabis for use by patients as the best available medical treatment, the licensing of medical cannabis dispensing organizations, and the registration of certain individuals; authorizing fees.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Electronic Information Systems (I0311)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PHYSICIANS (S1282)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Alvarado",
+   "last_action": "02/03/2025 S Referred to Health & Human Services",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "11/12/2024",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "11/12/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Referred to Health & Human Services"
+    },
+    {
+     "chamber": "S",
+     "date": "3/20/2025",
+     "description": "Co-author authorized"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00259I.HTM",
+   "stage": "In committee",
+   "filed": "11/12/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB259"
+  },
+  {
+   "id": "SB 334",
+   "caption": "Relating to the defense to prosecution for certain offenses involving possession of small amounts of controlled substances, marihuana, dangerous drugs, or abusable volatile chemicals, or possession of drug paraphernalia for defendants seeking assistance for a suspected overdose.",
+   "subjects": [
+    "Alcoholism & Drug Abuse (I0030)",
+    "Crimes--Drugs (I0185)",
+    "Health--Emergency Services & Personnel (I0384)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Eckhardt",
+   "last_action": "02/03/2025 S Referred to Criminal Justice",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "11/13/2024",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "11/13/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Referred to Criminal Justice"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00334I.HTM",
+   "stage": "In committee",
+   "filed": "11/13/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB334"
+  },
+  {
+   "id": "SB 335",
+   "caption": "Relating to regulating the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, and use of cannabis and cannabis products; authorizing the imposition of fees; requiring occupational licenses; creating a criminal offense.",
+   "subjects": [
+    "Alcoholism & Drug Abuse (I0030)",
+    "Crimes--Drugs (I0185)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "CRIMINAL RECORDS (S0008)",
+    "MARIHUANA (S3105)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Eckhardt",
+   "last_action": "02/03/2025 S Referred to State Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "11/13/2024",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "11/13/2024",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/3/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00335I.HTM",
+   "stage": "In committee",
+   "filed": "11/13/2024",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB335"
+  },
+  {
+   "id": "SB 733",
+   "caption": "Relating to the creation of a medical cannabis research program; authorizing fees.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Governor (I0375)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "State Agencies, Boards & Commissions--Newly Proposed (I0773)",
+    "MEDICAL CANNABIS RESEARCH ACT (PO881)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PHYSICIANS (S1282)",
+    "RESEARCH & DEVELOPMENT (S0135)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "MEDICAL CANNABIS RESEARCH ADVISORY BOARD (VC6Y5)",
+    "PUBLIC SAFETY COMMISSION (V8707)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Men\u00e9ndez",
+   "last_action": "02/07/2025 S Referred to Health & Human Services",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "1/7/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "1/7/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/7/2025",
+     "description": "Referred to Health & Human Services"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00733I.HTM",
+   "stage": "In committee",
+   "filed": "1/7/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB733"
+  },
+  {
+   "id": "SB 734",
+   "caption": "Relating to authorizing the possession, use, cultivation, distribution, delivery, sale, and research of medical cannabis for medical use by patients with certain medical conditions and the licensing of medical cannabis organizations; authorizing a fee.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Electronic Information Systems (I0311)",
+    "Governor (I0375)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "State Finances--Management & Control (I0748)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "PHYSICIANS (S1282)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Men\u00e9ndez",
+   "last_action": "02/07/2025 S Referred to Health & Human Services",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "1/7/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "1/7/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/7/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/7/2025",
+     "description": "Referred to Health & Human Services"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00734I.HTM",
+   "stage": "In committee",
+   "filed": "1/7/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB734"
+  },
+  {
+   "id": "SB 928",
+   "caption": "Relating to the delivery, possession, and medical use of low-THC cannabis and associated drug paraphernalia under the Texas Compassionate Use Program.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)"
+   ],
+   "authors": "Johnson",
+   "last_action": "02/13/2025 S Referred to Health & Human Services",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "1/24/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "1/24/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/13/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/13/2025",
+     "description": "Referred to Health & Human Services"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB00928I.HTM",
+   "stage": "In committee",
+   "filed": "1/24/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB928"
+  },
+  {
+   "id": "SB 1103",
+   "caption": "Relating to prohibiting the distribution or sale of certain flavored consumable hemp products; creating a criminal offense.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)"
+   ],
+   "authors": "Zaffirini",
+   "last_action": "02/24/2025 S Referred to State Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "2/5/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "2/5/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "2/24/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "2/24/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB01103I.HTM",
+   "stage": "In committee",
+   "filed": "2/5/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1103"
+  },
+  {
+   "id": "SB 1505",
+   "caption": "Relating to the medical use of low-THC cannabis under and the administration of the Texas Compassionate-Use Program.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PHYSICIANS (S1282)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Perry",
+   "last_action": "03/17/2025 S Committee report printed and distributed: Mar 17 2025  3:28PM",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/3/2025",
+     "description": "Left pending in committee"
+    },
+    {
+     "chamber": "S",
+     "date": "3/13/2025",
+     "description": "Considered in public hearing"
+    },
+    {
+     "chamber": "S",
+     "date": "3/13/2025",
+     "description": "Vote taken in committee"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Reported favorably w/o amendments"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Committee report printed and distributed"
+    },
+    {
+     "chamber": "S",
+     "date": "3/20/2025",
+     "description": "Co-author authorized"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB01505S.HTM",
+   "stage": "Out of committee",
+   "filed": "2/20/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1505"
+  },
+  {
+   "id": "SB 1866",
+   "caption": "Relating to the Texas Food, Drug, and Cosmetic Act.",
+   "subjects": [
+    "Health--General (I0385)",
+    "Safety (I0740)",
+    "HEMP (S0907)"
+   ],
+   "authors": "Perry",
+   "last_action": "03/17/2025 S Referred to Water, Agriculture, & Rural Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/4/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "3/4/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Referred to Water, Agriculture, & Rural Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB01866I.HTM",
+   "stage": "In committee",
+   "filed": "3/4/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1866"
+  },
+  {
+   "id": "SB 1870",
+   "caption": "Relating to municipal and county enforcement of drug and consumable hemp product laws; providing civil penalties.",
+   "subjects": [
+    "City Government--General (I0060)",
+    "Civil Remedies & Liabilities (I0065)",
+    "County Government--General (I0096)",
+    "Crimes--Drugs (I0185)",
+    "Law Enforcement (I0510)",
+    "HEMP (S0907)",
+    "ATTORNEY GENERAL (V2811)"
+   ],
+   "authors": "Perry",
+   "last_action": "05/06/2025 H Committee report sent to Calendars",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "4/28/2025",
+     "description": "Referred to State Affairs"
+    },
+    {
+     "chamber": "H",
+     "date": "4/30/2025",
+     "description": "Considered in public hearing"
+    },
+    {
+     "chamber": "H",
+     "date": "4/30/2025",
+     "description": "Reported favorably w/o amendment(s)"
+    },
+    {
+     "chamber": "H",
+     "date": "5/6/2025",
+     "description": "Comte report filed with Committee Coordinator"
+    },
+    {
+     "chamber": "H",
+     "date": "5/6/2025",
+     "description": "Committee report distributed"
+    },
+    {
+     "chamber": "H",
+     "date": "5/6/2025",
+     "description": "Committee report sent to Calendars"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB01870H.HTM",
+   "stage": "House committee",
+   "filed": "3/4/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1870"
+  },
+  {
+   "id": "SB 2028",
+   "caption": "Relating to the criminal and licensing consequences of certain offenses relating to the possession of marihuana, certain tetrahydrocannabinols, certain synthetic cannabinoids, and drug paraphernalia; imposing a fee.",
+   "subjects": [
+    "Courts--Judges (I0140)",
+    "Courts--Justice (I0110)",
+    "Courts--Municipal (I0100)",
+    "Crimes--Drugs (I0185)",
+    "Criminal Procedure--General (I0208)",
+    "CRIMINAL RECORDS (S0008)",
+    "DEFERRED ADJUDICATION (S6185)",
+    "EXPUNCTION OF RECORDS (S0189)",
+    "MARIHUANA (S3105)",
+    "PEACE OFFICERS (S0007)",
+    "SYNTHETIC CANNABINOIDS (S0718)"
+   ],
+   "authors": "Johnson",
+   "last_action": "03/17/2025 S Referred to State Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/7/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "3/7/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "3/17/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB02028I.HTM",
+   "stage": "In committee",
+   "filed": "3/7/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2028"
+  },
+  {
+   "id": "SB 2142",
+   "caption": "Relating to the creation of the consumable hemp products account in the general revenue fund and imposing fees for licensing manufacturers of consumable hemp products and registering certain retailers of consumable hemp products.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "State Finances--Appropriations (I0746)",
+    "HEMP (S0907)",
+    "STATE HEALTH SERVICES, DEPARTMENT OF (V0463)"
+   ],
+   "authors": "Perry",
+   "last_action": "03/24/2025 S Referred to Water, Agriculture, & Rural Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/10/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "3/10/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "3/24/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "3/24/2025",
+     "description": "Referred to Water, Agriculture, & Rural Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB02142I.HTM",
+   "stage": "In committee",
+   "filed": "3/10/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2142"
+  },
+  {
+   "id": "SB 2451",
+   "caption": "Relating to the creation of a grant program to assist local law enforcement agencies in testing certain substances suspected of containing delta-9 tetrahydrocannabinol.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Law Enforcement (I0510)",
+    "State Finances--Management & Control (I0748)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "CRIMINAL JUSTICE DIVISION, GOVERNOR'S OFFICE (V0963)"
+   ],
+   "authors": "Hancock",
+   "last_action": "03/25/2025 S Referred to State Affairs",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/13/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "3/13/2025",
+     "description": "Filed"
+    },
+    {
+     "chamber": "S",
+     "date": "3/25/2025",
+     "description": "Read first time"
+    },
+    {
+     "chamber": "S",
+     "date": "3/25/2025",
+     "description": "Referred to State Affairs"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB02451I.HTM",
+   "stage": "In committee",
+   "filed": "3/13/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2451"
+  },
+  {
+   "id": "SB 2952",
+   "caption": "Relating to the regulation of hemp and nonconsumable hemp products; increasing a criminal penalty; increasing a civil penalty and providing other penalties; requiring an occupational license; imposing and authorizing certain fees.",
+   "subjects": [
+    "Agriculture (I0020)",
+    "Aliens (I0032)",
+    "Business & Commerce--General (I0050)",
+    "Civil Remedies & Liabilities (I0065)",
+    "Crimes--Drugs (I0185)",
+    "Fees & Other Nontax Revenue--State (I0362)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "DRUG & ALCOHOL TESTING (S0010)",
+    "HEMP (S0907)",
+    "MARIHUANA (S3105)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "AGRICULTURE, DEPARTMENT OF (V0566)",
+    "HEALTH & HUMAN SERVICES COMMISSION (V0177)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
+   "authors": "Perry",
+   "last_action": "03/14/2025 S Filed",
+   "actions": [
+    {
+     "chamber": "S",
+     "date": "3/14/2025",
+     "description": "Received by the Secretary of the Senate"
+    },
+    {
+     "chamber": "S",
+     "date": "3/14/2025",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/89R/billtext/html/SB02952I.HTM",
+   "stage": "Filed",
+   "filed": "3/14/2025",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB2952"
+  }
+ ]
+}
