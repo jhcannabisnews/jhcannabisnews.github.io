@@ -1,7 +1,7 @@
 """Keep the home page's 500-subscriber goal bar current: read the channel's public subscriber count
 and rewrite the bar width and "N of 500 subscribers" text in index.html. Runs hourly from
 .github/workflows/subs.yml; by hand: python3 tools/subs.py
-If YouTube can't be read (bot wall, layout change), it leaves the page alone."""
+If YouTube can't be read (bot wall, layout change), it leaves the page alone and exits 1 so the run shows as failed."""
 import os, re, sys, urllib.request
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,9 +27,9 @@ def main():
     try:
         n = count()
     except Exception as e:
-        print("could not read YouTube:", e); return 0
+        print("could not read YouTube:", e); return 1
     if not n:
-        print("subscriber count not found; page left alone"); return 0
+        print("subscriber count not found; page left alone"); return 1
     pct = max(1, min(100, round(n * 100 / GOAL)))
     p = os.path.join(SITE, "index.html")
     t = open(p, encoding="utf-8").read()
