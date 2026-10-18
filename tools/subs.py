@@ -1,12 +1,12 @@
-"""Keep the home page's 500-subscriber goal bar current: read the channel's public subscriber count
-and rewrite the bar width and "N of 500 subscribers" text in index.html. Runs hourly from
+"""Keep the home page's 1,000-subscriber goal bar current: read the channel's public subscriber count
+and rewrite the bar width and "N of 1,000 subscribers" text in index.html. Runs every 30 minutes from
 .github/workflows/subs.yml; by hand: python3 tools/subs.py
 If YouTube can't be read (bot wall, layout change), it leaves the page alone and exits 1 so the run shows as failed."""
 import os, re, sys, urllib.request
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 URL = "https://www.youtube.com/@jhcannabisnews/about?hl=en&gl=US"
-GOAL = 500
+GOAL = 1000
 
 
 def count():
@@ -34,7 +34,7 @@ def main():
     p = os.path.join(SITE, "index.html")
     t = open(p, encoding="utf-8").read()
     t2 = re.sub(r'(<div id="subs-fill" style="width:)\d+%', rf"\g<1>{pct}%", t)
-    text = f"{n:,} of {GOAL} subscribers" if n < GOAL else f"{n:,} subscribers. We made it! 🎉"
+    text = f"{n:,} of {GOAL:,} subscribers" if n < GOAL else f"{n:,} subscribers. We made it! 🎉"
     t2 = re.sub(r'(<p id="subs-text"[^>]*>)[^<]*', rf"\g<1>{text}", t2)
     if t2 != t:
         open(p, "w", encoding="utf-8", newline="\n").write(t2)

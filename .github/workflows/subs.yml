@@ -2,7 +2,7 @@ name: Update subscriber goal bar
 
 on:
   schedule:
-    - cron: "40 * * * *"   # every hour
+    - cron: "10,40 * * * *"   # every 30 minutes
   workflow_dispatch:
 
 permissions:
