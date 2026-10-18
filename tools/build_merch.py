@@ -10,6 +10,7 @@ SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = "https://jh-cannabis-news.printify.me"
 MOCK = "https://images-api.printify.com/mockup/"
 P = [  # (slug, name, price, store product id, mockup path)
+    ("regulate-hat", "Regulate, Don't Ban Hat", "$27.99", "33270537", "6ad5351333bc1400d808a564/125365/135054/regulate-dont-ban-hat.jpg?camera_label=front"),
     ("ftp-tee", "Free the Plant Tee", "$25.99", "33258810", "6ad4f0e64a251b0fe7031511/18102/102044/free-the-plant-tee.jpg?camera_label=front-2"),
     ("savehemp-tee", "Save Hemp Retro Tee", "$25.99", "33259010", "6ad4f17f50ccb453d0057801/18102/102044/save-hemp-retro-tee.jpg?camera_label=front-2"),
     ("nerd-tee", "Cannabis Law Nerd Tee", "$25.99", "33259072", "6ad4f1a7c5bf429b0a08272d/18102/102044/cannabis-law-nerd-tee.jpg?camera_label=front-2"),
