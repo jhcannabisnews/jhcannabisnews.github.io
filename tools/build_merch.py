@@ -32,7 +32,7 @@ P = [  # (slug, name, price, store product id, mockup path)
     ("classic-hoodie", "Classic Logo Hoodie", "$44.99", "33235116", "6ad0ce6bf0531fc34e0f53e5/32920/98424/classic-logo-hoodie.jpg?camera_label=front"),
     ("hat", "Classic Logo Hat", "$27.99", "33235117", "6ad0c80c59ac88d91604b16b/125365/135054/classic-logo-hat.jpg?camera_label=front"),
     ("beanie", "Embroidered Logo Beanie", "$27.99", "33236558", "6ad40b96753e48c73f0b13b5/116417/109382/embroidered-logo-beanie.jpg?camera_label=front"),
-    ("gavel-tumbler", "Galaxy Gavel 20oz Tumbler", "$29.99", "33235122", "6ad3d9c17388cdd94b0a08d3/108286/104182/galaxy-gavel-20oz-tumbler.jpg?camera_label=front"),
+    ("neon-tumbler", "Neon Logo 20oz Tumbler", "$29.99", "33235122", "6ad3d9c17388cdd94b0a08d3/108286/104182/neon-logo-20oz-tumbler.jpg?camera_label=front&revision=1792690472000"),
     ("badge-tumbler", "Vintage Press Badge 20oz Tumbler", "$29.99", "33235121", "6ad3d9b63f189567a901e49a/108286/104182/vintage-press-badge-20oz-tumbler.jpg?camera_label=front"),
     ("classic-tumbler", "Classic Logo 20oz Tumbler", "$29.99", "33235118", "6ad0c89a97db1f1b0d0e6710/108286/104182/classic-logo-20oz-tumbler.jpg?camera_label=front"),
     ("mug", "Regulate, Don't Ban Black Mug", "$16.99", "33236223", "6ad408bd18e0243bd10d307d/65217/6405/regulate-dont-ban-black-mug.jpg?camera_label=front"),
