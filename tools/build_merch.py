@@ -10,6 +10,19 @@ SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = "https://jh-cannabis-news.printify.me"
 MOCK = "https://images-api.printify.com/mockup/"
 P = [  # (slug, name, price, store product id, mockup path)
+    # women's line (10-23): 3 bright pink/purple designs across tees, tumblers, cases, stickers
+    ("flower-power-peace-sign-tee", "Flower Power Peace Sign Tee", "$25.99", "33456195", "6adb75eb04ff64518d0e294e/18102/102044/flower-power-peace-sign-tee.jpg?camera_label=front-2"),
+    ("texas-grown-texas-regulated-butterfly-tee", "Texas Grown Texas Regulated Butterfly Tee", "$25.99", "33456350", "6adb75f4abc2ab63bd0aac56/18102/102044/texas-grown-texas-regulated-butterfly-tee.jpg?camera_label=front-2"),
+    ("good-vibes-clear-laws-moon-tee", "Good Vibes Clear Laws Moon Tee", "$25.99", "33456454", "6adb75f9d155d127b5025190/18102/102044/good-vibes-clear-laws-moon-tee.jpg?camera_label=front-2"),
+    ("flower-power-peace-sign-20oz-tumbler", "Flower Power Peace Sign 20oz Tumbler", "$29.99", "33456247", "6adb75fe577086f0460372d8/108286/104182/flower-power-peace-sign-20oz-tumbler.jpg?camera_label=front"),
+    ("texas-grown-texas-regulated-butterfly-20oz-tumbler", "Texas Grown Texas Regulated Butterfly 20oz Tumbler", "$29.99", "33456367", "6adb7603577086f0460372e3/108286/104182/texas-grown-texas-regulated-butterfly-20oz-tumbler.jpg?camera_label=front"),
+    ("good-vibes-clear-laws-moon-20oz-tumbler", "Good Vibes Clear Laws Moon 20oz Tumbler", "$29.99", "33456464", "6adb7608ca2c490d9d08755b/108286/104182/good-vibes-clear-laws-moon-20oz-tumbler.jpg?camera_label=front"),
+    ("flower-power-peace-sign-phone-case", "Flower Power Peace Sign Phone Case", "$24.99", "33456318", "6adb76510c4296642f0ada2a/62582/97458/flower-power-peace-sign-phone-case.jpg?camera_label=front-and-side"),
+    ("texas-grown-texas-regulated-butterfly-phone-case", "Texas Grown Texas Regulated Butterfly Phone Case", "$24.99", "33456402", "6adb7656b25b080af50443dd/62582/97458/texas-grown-texas-regulated-butterfly-phone-case.jpg?camera_label=front-and-side"),
+    ("good-vibes-clear-laws-moon-phone-case", "Good Vibes Clear Laws Moon Phone Case", "$24.99", "33456485", "6adb765bd155d127b50251e8/62582/97458/good-vibes-clear-laws-moon-phone-case.jpg?camera_label=front-and-side"),
+    ("flower-power-peace-sign-sticker", "Flower Power Peace Sign Sticker", "from $4.99", "33456271", "6adb760e577086f0460372e5/45750/16655/flower-power-peace-sign-sticker.jpg?camera_label=front"),
+    ("texas-grown-texas-regulated-butterfly-sticker", "Texas Grown Texas Regulated Butterfly Sticker", "from $4.99", "33456381", "6adb7613577086f0460372e6/45750/16655/texas-grown-texas-regulated-butterfly-sticker.jpg?camera_label=front"),
+    ("good-vibes-clear-laws-moon-sticker", "Good Vibes Clear Laws Moon Sticker", "from $4.99", "33456474", "6adb761804ff64518d0e296c/45750/16655/good-vibes-clear-laws-moon-sticker.jpg?camera_label=front"),
     # older-men line (10-22): 8 designs across tees, hoodies, tumblers, mugs, cases, hats, stickers
     ("hemp-for-victory-tee", "Hemp for Victory Tee", "$25.99", "33440144", "6adab91d2e39dc5ae40a382f/18102/102044/hemp-for-victory-tee.jpg?camera_label=front-2"),
     ("texas-hemp-pickup-tee", "Texas Hemp Pickup Tee", "$25.99", "33440219", "6adaba1c3f8f83bb360e5dcb/18102/102044/texas-hemp-pickup-tee.jpg?camera_label=front-2"),
