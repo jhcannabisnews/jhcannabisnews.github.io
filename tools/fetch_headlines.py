@@ -45,7 +45,7 @@ MAX_ITEMS = 60
 def fetch(query):
     q = urllib.parse.quote(f"{query} when:3d")
     url = f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
-    req = urllib.request.Request(url, headers={"User-Agent": "JHCannabisNews/1.0 (+https://jhcannabisnews.github.io)"})
+    req = urllib.request.Request(url, headers={"User-Agent": "JHCannabisNews/1.0 (+https://jhcannabisnews.com)"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return ET.fromstring(r.read())
 

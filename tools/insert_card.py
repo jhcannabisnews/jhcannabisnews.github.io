@@ -57,7 +57,7 @@ card.alpha_composite(q, (x, qy))
 tx = x + 290
 d.text((tx, qy + 6), "Scan to subscribe", font=font("segoeuib.ttf", 44), fill=BLACK)
 links = [("YouTube", "youtube.com/@jhcannabisnews"),
-         ("Website", "jhcannabisnews.github.io"),
+         ("Website", "jhcannabisnews.com"),
          ("Discord", "discord.gg/EXqpgyQyBq")]
 for i, (k, v) in enumerate(links):
     y = qy + 80 + i * 54

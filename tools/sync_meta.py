@@ -3,7 +3,7 @@ and regenerate sitemap.xml. Run after adding a page: py -3 tools/sync_meta.py
 """
 import glob, html, os, re
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://jhcannabisnews.github.io/"
+BASE = "https://jhcannabisnews.com/"
 DESC = {
     "index.html": "Cannabis law news every weekday with James & Hope: federal rescheduling, the hemp ban, state laws and every ballot vote, explained in plain English.",
     "episodes.html": "Every J&H Cannabis News episode: the day's biggest cannabis-law stories with real local news clips, explained by James & Hope.",

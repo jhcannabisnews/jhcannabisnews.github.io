@@ -1,7 +1,7 @@
 // Renders data/headlines.json into <ul id="headlines" data-limit="N">.
 // Reads the raw GitHub copy first so a fresh fetch shows up without waiting for a Pages rebuild.
 const JH_SOURCES = [
-  "https://raw.githubusercontent.com/jhcannabisnews/jhcannabisnews.github.io/main/data/headlines.json",
+  "https://raw.githubusercontent.com/jhcannabisnews/jhcannabisnews.com/main/data/headlines.json",
   "data/headlines.json",
 ];
 
