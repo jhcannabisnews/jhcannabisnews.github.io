@@ -105,7 +105,48 @@ CSS = """<style>
 .item .soon{color:var(--purple);font-weight:700;font-size:.9rem}
 .item a.btn{margin-top:10px;padding:8px 14px;font-size:.9rem}
 .notice{background:#3a1a1a;border:2px solid var(--red);border-radius:10px;padding:12px 16px;margin:18px auto;max-width:720px}
+.shop{display:flex;gap:26px;align-items:flex-start;text-align:left;margin-top:22px}
+.cats{position:sticky;top:14px;flex:0 0 190px;background:var(--panel);border-radius:12px;padding:10px}
+.cats h2{font-size:.8rem;letter-spacing:.12em;color:var(--purple);margin:6px 10px 8px}
+.cats button{display:flex;justify-content:space-between;width:100%;background:none;border:0;color:var(--white);
+  font:inherit;font-weight:700;padding:10px 12px;border-radius:8px;cursor:pointer;text-align:left}
+.cats button:hover{background:rgba(255,255,255,.06)}
+.cats button.on{background:var(--red);color:#fff}
+.cats .n{opacity:.7;font-weight:400}
+.shop .merch-grid{flex:1;margin:0}
+.shop .count{color:var(--grey,#aaa);font-size:.9rem;margin:0 0 12px}
+.item[hidden]{display:none}
+@media (max-width:760px){.shop{display:block}.cats{position:static;display:flex;gap:6px;overflow-x:auto;padding:6px;margin-bottom:16px}
+  .cats h2{display:none}.cats button{width:auto;white-space:nowrap;gap:6px;flex:0 0 auto}}
 </style>"""
+
+CATS = [("shirts", "Shirts", "tee"), ("hoodies", "Hoodies", "hoodie"), ("mugs", "Mugs", "mug"),
+        ("tumblers", "Tumblers", "tumbler"), ("hats", "Hats", ("hat", "beanie")), ("stickers", "Stickers", "sticker"),
+        ("phone-cases", "Phone cases", "phone case"), ("can-coolers", "Can coolers", "cooler")]
+
+
+def category(name):
+    n = name.lower()
+    for key, _, words in sorted(CATS, key=lambda c: c[0] != "hoodies"):   # "hoodie" before "tee" style matches
+        if any(w in n for w in ((words,) if isinstance(words, str) else words)):
+            return key
+    raise ValueError("no merch category for " + name)
+
+
+FILTER_JS = """<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('.cats button')),items=[].slice.call(document.querySelectorAll('.item')),
+      cnt=document.querySelector('.shop .count');
+  function show(c){
+    var n=0;items.forEach(function(it){var on=c==='all'||it.dataset.cat===c;it.hidden=!on;if(on)n++;});
+    btns.forEach(function(b){b.classList.toggle('on',b.dataset.cat===c);});
+    cnt.textContent=n+(n===1?' item':' items');
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.cat);
+    history.replaceState(null,'',b.dataset.cat==='all'?location.pathname:'#'+b.dataset.cat);});});
+  var h=location.hash.slice(1);show(btns.some(function(b){return b.dataset.cat===h;})?h:'all');
+})();
+</script>"""
 
 FOOT = """<footer>
   J&amp;H Cannabis News is news reporting and commentary for educational purposes. Nothing on
@@ -138,13 +179,20 @@ def esc(s):
 
 def page(preview, nav):
     cards = []
-    for slug, name, price, pid, _ in P:
+    order = [c[0] for c in CATS]
+    items = sorted(P, key=lambda p: order.index(category(p[1])))   # stable: newest-first order kept inside a category
+    counts = {k: sum(category(p[1]) == k for p in P) for k in order}
+    for slug, name, price, pid, _ in items:
         if preview:
             body = f'<span class="price">{price}</span><br><a class="btn" href="{STORE}/product/{pid}">View in store</a>'
         else:
             body = '<span class="soon">Coming soon</span>'
-        cards.append(f'<div class="item"><img src="merch/{slug}.jpg" alt="{esc(name)}" loading="lazy">'
+        cards.append(f'<div class="item" data-cat="{category(name)}"><img src="merch/{slug}.jpg" alt="{esc(name)}" loading="lazy">'
                      f'<div class="info"><h3>{esc(name)}</h3>{body}</div></div>')
+    side = ('<aside class="cats"><h2>SHOP BY CATEGORY</h2>'
+            f'<button data-cat="all">All <span class="n">{len(P)}</span></button>'
+            + "".join(f'<button data-cat="{k}">{label} <span class="n">{counts[k]}</span></button>'
+                      for k, label, _ in CATS if counts[k]) + '</aside>')
     if preview:
         title, meta = "Merch Preview", '<meta name="robots" content="noindex,nofollow">'
         top = ('<div class="notice">🔒 <strong>Private preview for James &amp; Hope.</strong> This page isn\'t linked anywhere. '
@@ -161,8 +209,9 @@ def page(preview, nav):
                '  <a class="btn ghost" href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>')
     return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">\n'
             f'<title>{title}</title>\n{meta}\n<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">\n{CSS}\n</head>\n<body>\n'
-            f'<nav>{nav}</nav>\n<div class="wrap center">\n  {top}\n  <div class="merch-grid">\n    '
-            + "\n    ".join(cards) + "\n  </div>\n</div>\n" + FOOT)
+            f'<nav>{nav}</nav>\n<div class="wrap center">\n  {top}\n  <div class="shop">\n  {side}\n  <div style="flex:1">'
+            '<p class="count"></p>\n  <div class="merch-grid">\n    '
+            + "\n    ".join(cards) + "\n  </div></div>\n  </div>\n</div>\n" + FILTER_JS + "\n" + FOOT)
 
 
 if __name__ == "__main__":

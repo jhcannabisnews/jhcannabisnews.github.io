@@ -15,6 +15,19 @@
 .item .soon{color:var(--purple);font-weight:700;font-size:.9rem}
 .item a.btn{margin-top:10px;padding:8px 14px;font-size:.9rem}
 .notice{background:#3a1a1a;border:2px solid var(--red);border-radius:10px;padding:12px 16px;margin:18px auto;max-width:720px}
+.shop{display:flex;gap:26px;align-items:flex-start;text-align:left;margin-top:22px}
+.cats{position:sticky;top:14px;flex:0 0 190px;background:var(--panel);border-radius:12px;padding:10px}
+.cats h2{font-size:.8rem;letter-spacing:.12em;color:var(--purple);margin:6px 10px 8px}
+.cats button{display:flex;justify-content:space-between;width:100%;background:none;border:0;color:var(--white);
+  font:inherit;font-weight:700;padding:10px 12px;border-radius:8px;cursor:pointer;text-align:left}
+.cats button:hover{background:rgba(255,255,255,.06)}
+.cats button.on{background:var(--red);color:#fff}
+.cats .n{opacity:.7;font-weight:400}
+.shop .merch-grid{flex:1;margin:0}
+.shop .count{color:var(--grey,#aaa);font-size:.9rem;margin:0 0 12px}
+.item[hidden]{display:none}
+@media (max-width:760px){.shop{display:block}.cats{position:static;display:flex;gap:6px;overflow-x:auto;padding:6px;margin-bottom:16px}
+  .cats h2{display:none}.cats button{width:auto;white-space:nowrap;gap:6px;flex:0 0 auto}}
 </style>
 </head>
 <body>
@@ -43,88 +56,106 @@
   <p class="lead">Official J&amp;H Cannabis News gear is almost here: tees, hoodies, hats, tumblers, mugs, stickers and more. <strong>Regulate, don't ban.</strong> Subscribe or join our Discord to hear the moment it drops.</p>
   <a class="btn" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>
   <a class="btn ghost" href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>
+  <div class="shop">
+  <aside class="cats"><h2>SHOP BY CATEGORY</h2><button data-cat="all">All <span class="n">79</span></button><button data-cat="shirts">Shirts <span class="n">22</span></button><button data-cat="hoodies">Hoodies <span class="n">11</span></button><button data-cat="mugs">Mugs <span class="n">6</span></button><button data-cat="tumblers">Tumblers <span class="n">15</span></button><button data-cat="hats">Hats <span class="n">6</span></button><button data-cat="stickers">Stickers <span class="n">10</span></button><button data-cat="phone-cases">Phone cases <span class="n">8</span></button><button data-cat="can-coolers">Can coolers <span class="n">1</span></button></aside>
+  <div style="flex:1"><p class="count"></p>
   <div class="merch-grid">
-    <div class="item"><img src="merch/veterans-dog-tags-tee.jpg" alt="Veterans Dog Tags Tee" loading="lazy"><div class="info"><h3>Veterans Dog Tags Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-dog-tags-hoodie.jpg" alt="Veterans Dog Tags Hoodie" loading="lazy"><div class="info"><h3>Veterans Dog Tags Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-dog-tags-black-mug.jpg" alt="Veterans Dog Tags Black Mug" loading="lazy"><div class="info"><h3>Veterans Dog Tags Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-dog-tags-20oz-tumbler.jpg" alt="Veterans Dog Tags 20oz Tumbler" loading="lazy"><div class="info"><h3>Veterans Dog Tags 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-deserve-access-patch-hat.jpg" alt="Veterans Deserve Access Patch Hat" loading="lazy"><div class="info"><h3>Veterans Deserve Access Patch Hat</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-deserve-access-patch-sticker.jpg" alt="Veterans Deserve Access Patch Sticker" loading="lazy"><div class="info"><h3>Veterans Deserve Access Patch Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/flower-power-peace-sign-tee.jpg" alt="Flower Power Peace Sign Tee" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-butterfly-tee.jpg" alt="Texas Grown Texas Regulated Butterfly Tee" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/good-vibes-clear-laws-moon-tee.jpg" alt="Good Vibes Clear Laws Moon Tee" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/flower-power-peace-sign-20oz-tumbler.jpg" alt="Flower Power Peace Sign 20oz Tumbler" loading="lazy"><div class="info"><h3>Flower Power Peace Sign 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-butterfly-20oz-tumbler.jpg" alt="Texas Grown Texas Regulated Butterfly 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/good-vibes-clear-laws-moon-20oz-tumbler.jpg" alt="Good Vibes Clear Laws Moon 20oz Tumbler" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/flower-power-peace-sign-phone-case.jpg" alt="Flower Power Peace Sign Phone Case" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-butterfly-phone-case.jpg" alt="Texas Grown Texas Regulated Butterfly Phone Case" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/good-vibes-clear-laws-moon-phone-case.jpg" alt="Good Vibes Clear Laws Moon Phone Case" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/flower-power-peace-sign-sticker.jpg" alt="Flower Power Peace Sign Sticker" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-butterfly-sticker.jpg" alt="Texas Grown Texas Regulated Butterfly Sticker" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/good-vibes-clear-laws-moon-sticker.jpg" alt="Good Vibes Clear Laws Moon Sticker" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/hemp-for-victory-tee.jpg" alt="Hemp for Victory Tee" loading="lazy"><div class="info"><h3>Hemp for Victory Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-hemp-pickup-tee.jpg" alt="Texas Hemp Pickup Tee" loading="lazy"><div class="info"><h3>Texas Hemp Pickup Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/old-enough-to-remember-tee.jpg" alt="Old Enough to Remember Tee" loading="lazy"><div class="info"><h3>Old Enough to Remember Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-for-medical-cannabis-tee.jpg" alt="Veterans for Medical Cannabis Tee" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-tee.jpg" alt="Texas Grown Texas Regulated Tee" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/we-the-people-tee.jpg" alt="We the People Tee" loading="lazy"><div class="info"><h3>We the People Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ask-me-about-the-farm-bill-tee.jpg" alt="Ask Me About the Farm Bill Tee" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/gone-fishin-for-better-laws-tee.jpg" alt="Gone Fishin for Better Laws Tee" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/hemp-for-victory-hoodie.jpg" alt="Hemp for Victory Hoodie" loading="lazy"><div class="info"><h3>Hemp for Victory Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-hemp-pickup-hoodie.jpg" alt="Texas Hemp Pickup Hoodie" loading="lazy"><div class="info"><h3>Texas Hemp Pickup Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-for-medical-cannabis-hoodie.jpg" alt="Veterans for Medical Cannabis Hoodie" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-hoodie.jpg" alt="Texas Grown Texas Regulated Hoodie" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-hemp-pickup-20oz-tumbler.jpg" alt="Texas Hemp Pickup 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Hemp Pickup 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/old-enough-to-remember-20oz-tumbler.jpg" alt="Old Enough to Remember 20oz Tumbler" loading="lazy"><div class="info"><h3>Old Enough to Remember 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-for-medical-cannabis-20oz-tumbler.jpg" alt="Veterans for Medical Cannabis 20oz Tumbler" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-20oz-tumbler.jpg" alt="Texas Grown Texas Regulated 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/gone-fishin-for-better-laws-20oz-tumbler.jpg" alt="Gone Fishin for Better Laws 20oz Tumbler" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/hemp-for-victory-black-mug.jpg" alt="Hemp for Victory Black Mug" loading="lazy"><div class="info"><h3>Hemp for Victory Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/old-enough-to-remember-black-mug.jpg" alt="Old Enough to Remember Black Mug" loading="lazy"><div class="info"><h3>Old Enough to Remember Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/we-the-people-black-mug.jpg" alt="We the People Black Mug" loading="lazy"><div class="info"><h3>We the People Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ask-me-about-the-farm-bill-black-mug.jpg" alt="Ask Me About the Farm Bill Black Mug" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/hemp-for-victory-phone-case.jpg" alt="Hemp for Victory Phone Case" loading="lazy"><div class="info"><h3>Hemp for Victory Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-grown-texas-regulated-phone-case.jpg" alt="Texas Grown Texas Regulated Phone Case" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/gone-fishin-for-better-laws-phone-case.jpg" alt="Gone Fishin for Better Laws Phone Case" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-for-medical-cannabis-hat.jpg" alt="Veterans for Medical Cannabis Hat" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Hat</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ask-me-about-the-farm-bill-hat.jpg" alt="Ask Me About the Farm Bill Hat" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Hat</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ask-me-about-the-farm-bill-sticker.jpg" alt="Ask Me About the Farm Bill Sticker" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/veterans-for-medical-cannabis-sticker.jpg" alt="Veterans for Medical Cannabis Sticker" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/gone-fishin-for-better-laws-sticker.jpg" alt="Gone Fishin for Better Laws Sticker" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/regulate-hat.jpg" alt="Regulate, Don&#39;t Ban Hat" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Hat</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ftp-tee.jpg" alt="Free the Plant Tee" loading="lazy"><div class="info"><h3>Free the Plant Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/savehemp-tee.jpg" alt="Save Hemp Retro Tee" loading="lazy"><div class="info"><h3>Save Hemp Retro Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/nerd-tee.jpg" alt="Cannabis Law Nerd Tee" loading="lazy"><div class="info"><h3>Cannabis Law Nerd Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/txfight-tee.jpg" alt="Texas Hemp Fight Tee" loading="lazy"><div class="info"><h3>Texas Hemp Fight Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/vote-tee.jpg" alt="Vote Like Cannabis Matters Tee" loading="lazy"><div class="info"><h3>Vote Like Cannabis Matters Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ftp-hoodie.jpg" alt="Free the Plant Hoodie" loading="lazy"><div class="info"><h3>Free the Plant Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/savehemp-hoodie.jpg" alt="Save Hemp Retro Hoodie" loading="lazy"><div class="info"><h3>Save Hemp Retro Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/nerd-hoodie.jpg" alt="Cannabis Law Nerd Hoodie" loading="lazy"><div class="info"><h3>Cannabis Law Nerd Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/txfight-hoodie.jpg" alt="Texas Hemp Fight Hoodie" loading="lazy"><div class="info"><h3>Texas Hemp Fight Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/ftp-tumbler.jpg" alt="Free the Plant 20oz Tumbler" loading="lazy"><div class="info"><h3>Free the Plant 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/savehemp-tumbler.jpg" alt="Save Hemp Retro 20oz Tumbler" loading="lazy"><div class="info"><h3>Save Hemp Retro 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/21plus-tumbler.jpg" alt="21+ and Regulated 20oz Tumbler" loading="lazy"><div class="info"><h3>21+ and Regulated 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/regulate-tee.jpg" alt="Regulate, Don&#39;t Ban Tee" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/neon-tee.jpg" alt="Neon Logo Tee" loading="lazy"><div class="info"><h3>Neon Logo Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/dec11-tee.jpg" alt="Dec 11 Hemp Fight Tee" loading="lazy"><div class="info"><h3>Dec 11 Hemp Fight Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/texas-tee.jpg" alt="Texas Cannabis News Tee" loading="lazy"><div class="info"><h3>Texas Cannabis News Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/classic-tee.jpg" alt="Classic Logo Tee" loading="lazy"><div class="info"><h3>Classic Logo Tee</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/neon-hoodie.jpg" alt="Neon Logo Hoodie" loading="lazy"><div class="info"><h3>Neon Logo Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/classic-hoodie.jpg" alt="Classic Logo Hoodie" loading="lazy"><div class="info"><h3>Classic Logo Hoodie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/hat.jpg" alt="Classic Logo Hat" loading="lazy"><div class="info"><h3>Classic Logo Hat</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/beanie.jpg" alt="Embroidered Logo Beanie" loading="lazy"><div class="info"><h3>Embroidered Logo Beanie</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/neon-tumbler.jpg" alt="Neon Logo 20oz Tumbler" loading="lazy"><div class="info"><h3>Neon Logo 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/badge-tumbler.jpg" alt="Vintage Press Badge 20oz Tumbler" loading="lazy"><div class="info"><h3>Vintage Press Badge 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/classic-tumbler.jpg" alt="Classic Logo 20oz Tumbler" loading="lazy"><div class="info"><h3>Classic Logo 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/mug.jpg" alt="Regulate, Don&#39;t Ban Black Mug" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Black Mug</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/cooler.jpg" alt="Vintage Press Badge Can Cooler" loading="lazy"><div class="info"><h3>Vintage Press Badge Can Cooler</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/phone-regulate.jpg" alt="Regulate, Don&#39;t Ban Phone Case" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/phone-classic.jpg" alt="J&amp;H Cannabis News Classic Logo Phone Case" loading="lazy"><div class="info"><h3>J&amp;H Cannabis News Classic Logo Phone Case</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/sticker-neon.jpg" alt="Neon Logo Sticker" loading="lazy"><div class="info"><h3>Neon Logo Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/sticker-gavel.jpg" alt="Galaxy Gavel Sticker" loading="lazy"><div class="info"><h3>Galaxy Gavel Sticker</h3><span class="soon">Coming soon</span></div></div>
-    <div class="item"><img src="merch/sticker-regulate.jpg" alt="Regulate, Don&#39;t Ban Sticker" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/veterans-dog-tags-tee.jpg" alt="Veterans Dog Tags Tee" loading="lazy"><div class="info"><h3>Veterans Dog Tags Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/flower-power-peace-sign-tee.jpg" alt="Flower Power Peace Sign Tee" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/texas-grown-texas-regulated-butterfly-tee.jpg" alt="Texas Grown Texas Regulated Butterfly Tee" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/good-vibes-clear-laws-moon-tee.jpg" alt="Good Vibes Clear Laws Moon Tee" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/hemp-for-victory-tee.jpg" alt="Hemp for Victory Tee" loading="lazy"><div class="info"><h3>Hemp for Victory Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/texas-hemp-pickup-tee.jpg" alt="Texas Hemp Pickup Tee" loading="lazy"><div class="info"><h3>Texas Hemp Pickup Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/old-enough-to-remember-tee.jpg" alt="Old Enough to Remember Tee" loading="lazy"><div class="info"><h3>Old Enough to Remember Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/veterans-for-medical-cannabis-tee.jpg" alt="Veterans for Medical Cannabis Tee" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/texas-grown-texas-regulated-tee.jpg" alt="Texas Grown Texas Regulated Tee" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/we-the-people-tee.jpg" alt="We the People Tee" loading="lazy"><div class="info"><h3>We the People Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/ask-me-about-the-farm-bill-tee.jpg" alt="Ask Me About the Farm Bill Tee" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/gone-fishin-for-better-laws-tee.jpg" alt="Gone Fishin for Better Laws Tee" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/ftp-tee.jpg" alt="Free the Plant Tee" loading="lazy"><div class="info"><h3>Free the Plant Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/savehemp-tee.jpg" alt="Save Hemp Retro Tee" loading="lazy"><div class="info"><h3>Save Hemp Retro Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/nerd-tee.jpg" alt="Cannabis Law Nerd Tee" loading="lazy"><div class="info"><h3>Cannabis Law Nerd Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/txfight-tee.jpg" alt="Texas Hemp Fight Tee" loading="lazy"><div class="info"><h3>Texas Hemp Fight Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/vote-tee.jpg" alt="Vote Like Cannabis Matters Tee" loading="lazy"><div class="info"><h3>Vote Like Cannabis Matters Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/regulate-tee.jpg" alt="Regulate, Don&#39;t Ban Tee" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/neon-tee.jpg" alt="Neon Logo Tee" loading="lazy"><div class="info"><h3>Neon Logo Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/dec11-tee.jpg" alt="Dec 11 Hemp Fight Tee" loading="lazy"><div class="info"><h3>Dec 11 Hemp Fight Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/texas-tee.jpg" alt="Texas Cannabis News Tee" loading="lazy"><div class="info"><h3>Texas Cannabis News Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="shirts"><img src="merch/classic-tee.jpg" alt="Classic Logo Tee" loading="lazy"><div class="info"><h3>Classic Logo Tee</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/veterans-dog-tags-hoodie.jpg" alt="Veterans Dog Tags Hoodie" loading="lazy"><div class="info"><h3>Veterans Dog Tags Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/hemp-for-victory-hoodie.jpg" alt="Hemp for Victory Hoodie" loading="lazy"><div class="info"><h3>Hemp for Victory Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/texas-hemp-pickup-hoodie.jpg" alt="Texas Hemp Pickup Hoodie" loading="lazy"><div class="info"><h3>Texas Hemp Pickup Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/veterans-for-medical-cannabis-hoodie.jpg" alt="Veterans for Medical Cannabis Hoodie" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/texas-grown-texas-regulated-hoodie.jpg" alt="Texas Grown Texas Regulated Hoodie" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/ftp-hoodie.jpg" alt="Free the Plant Hoodie" loading="lazy"><div class="info"><h3>Free the Plant Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/savehemp-hoodie.jpg" alt="Save Hemp Retro Hoodie" loading="lazy"><div class="info"><h3>Save Hemp Retro Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/nerd-hoodie.jpg" alt="Cannabis Law Nerd Hoodie" loading="lazy"><div class="info"><h3>Cannabis Law Nerd Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/txfight-hoodie.jpg" alt="Texas Hemp Fight Hoodie" loading="lazy"><div class="info"><h3>Texas Hemp Fight Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/neon-hoodie.jpg" alt="Neon Logo Hoodie" loading="lazy"><div class="info"><h3>Neon Logo Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hoodies"><img src="merch/classic-hoodie.jpg" alt="Classic Logo Hoodie" loading="lazy"><div class="info"><h3>Classic Logo Hoodie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/veterans-dog-tags-black-mug.jpg" alt="Veterans Dog Tags Black Mug" loading="lazy"><div class="info"><h3>Veterans Dog Tags Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/hemp-for-victory-black-mug.jpg" alt="Hemp for Victory Black Mug" loading="lazy"><div class="info"><h3>Hemp for Victory Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/old-enough-to-remember-black-mug.jpg" alt="Old Enough to Remember Black Mug" loading="lazy"><div class="info"><h3>Old Enough to Remember Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/we-the-people-black-mug.jpg" alt="We the People Black Mug" loading="lazy"><div class="info"><h3>We the People Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/ask-me-about-the-farm-bill-black-mug.jpg" alt="Ask Me About the Farm Bill Black Mug" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="mugs"><img src="merch/mug.jpg" alt="Regulate, Don&#39;t Ban Black Mug" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Black Mug</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/veterans-dog-tags-20oz-tumbler.jpg" alt="Veterans Dog Tags 20oz Tumbler" loading="lazy"><div class="info"><h3>Veterans Dog Tags 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/flower-power-peace-sign-20oz-tumbler.jpg" alt="Flower Power Peace Sign 20oz Tumbler" loading="lazy"><div class="info"><h3>Flower Power Peace Sign 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/texas-grown-texas-regulated-butterfly-20oz-tumbler.jpg" alt="Texas Grown Texas Regulated Butterfly 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/good-vibes-clear-laws-moon-20oz-tumbler.jpg" alt="Good Vibes Clear Laws Moon 20oz Tumbler" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/texas-hemp-pickup-20oz-tumbler.jpg" alt="Texas Hemp Pickup 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Hemp Pickup 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/old-enough-to-remember-20oz-tumbler.jpg" alt="Old Enough to Remember 20oz Tumbler" loading="lazy"><div class="info"><h3>Old Enough to Remember 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/veterans-for-medical-cannabis-20oz-tumbler.jpg" alt="Veterans for Medical Cannabis 20oz Tumbler" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/texas-grown-texas-regulated-20oz-tumbler.jpg" alt="Texas Grown Texas Regulated 20oz Tumbler" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/gone-fishin-for-better-laws-20oz-tumbler.jpg" alt="Gone Fishin for Better Laws 20oz Tumbler" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/ftp-tumbler.jpg" alt="Free the Plant 20oz Tumbler" loading="lazy"><div class="info"><h3>Free the Plant 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/savehemp-tumbler.jpg" alt="Save Hemp Retro 20oz Tumbler" loading="lazy"><div class="info"><h3>Save Hemp Retro 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/21plus-tumbler.jpg" alt="21+ and Regulated 20oz Tumbler" loading="lazy"><div class="info"><h3>21+ and Regulated 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/neon-tumbler.jpg" alt="Neon Logo 20oz Tumbler" loading="lazy"><div class="info"><h3>Neon Logo 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/badge-tumbler.jpg" alt="Vintage Press Badge 20oz Tumbler" loading="lazy"><div class="info"><h3>Vintage Press Badge 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="tumblers"><img src="merch/classic-tumbler.jpg" alt="Classic Logo 20oz Tumbler" loading="lazy"><div class="info"><h3>Classic Logo 20oz Tumbler</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/veterans-deserve-access-patch-hat.jpg" alt="Veterans Deserve Access Patch Hat" loading="lazy"><div class="info"><h3>Veterans Deserve Access Patch Hat</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/veterans-for-medical-cannabis-hat.jpg" alt="Veterans for Medical Cannabis Hat" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Hat</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/ask-me-about-the-farm-bill-hat.jpg" alt="Ask Me About the Farm Bill Hat" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Hat</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/regulate-hat.jpg" alt="Regulate, Don&#39;t Ban Hat" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Hat</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/hat.jpg" alt="Classic Logo Hat" loading="lazy"><div class="info"><h3>Classic Logo Hat</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="hats"><img src="merch/beanie.jpg" alt="Embroidered Logo Beanie" loading="lazy"><div class="info"><h3>Embroidered Logo Beanie</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/veterans-deserve-access-patch-sticker.jpg" alt="Veterans Deserve Access Patch Sticker" loading="lazy"><div class="info"><h3>Veterans Deserve Access Patch Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/flower-power-peace-sign-sticker.jpg" alt="Flower Power Peace Sign Sticker" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/texas-grown-texas-regulated-butterfly-sticker.jpg" alt="Texas Grown Texas Regulated Butterfly Sticker" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/good-vibes-clear-laws-moon-sticker.jpg" alt="Good Vibes Clear Laws Moon Sticker" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/ask-me-about-the-farm-bill-sticker.jpg" alt="Ask Me About the Farm Bill Sticker" loading="lazy"><div class="info"><h3>Ask Me About the Farm Bill Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/veterans-for-medical-cannabis-sticker.jpg" alt="Veterans for Medical Cannabis Sticker" loading="lazy"><div class="info"><h3>Veterans for Medical Cannabis Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/gone-fishin-for-better-laws-sticker.jpg" alt="Gone Fishin for Better Laws Sticker" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/sticker-neon.jpg" alt="Neon Logo Sticker" loading="lazy"><div class="info"><h3>Neon Logo Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/sticker-gavel.jpg" alt="Galaxy Gavel Sticker" loading="lazy"><div class="info"><h3>Galaxy Gavel Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="stickers"><img src="merch/sticker-regulate.jpg" alt="Regulate, Don&#39;t Ban Sticker" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Sticker</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/flower-power-peace-sign-phone-case.jpg" alt="Flower Power Peace Sign Phone Case" loading="lazy"><div class="info"><h3>Flower Power Peace Sign Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/texas-grown-texas-regulated-butterfly-phone-case.jpg" alt="Texas Grown Texas Regulated Butterfly Phone Case" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Butterfly Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/good-vibes-clear-laws-moon-phone-case.jpg" alt="Good Vibes Clear Laws Moon Phone Case" loading="lazy"><div class="info"><h3>Good Vibes Clear Laws Moon Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/hemp-for-victory-phone-case.jpg" alt="Hemp for Victory Phone Case" loading="lazy"><div class="info"><h3>Hemp for Victory Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/texas-grown-texas-regulated-phone-case.jpg" alt="Texas Grown Texas Regulated Phone Case" loading="lazy"><div class="info"><h3>Texas Grown Texas Regulated Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/gone-fishin-for-better-laws-phone-case.jpg" alt="Gone Fishin for Better Laws Phone Case" loading="lazy"><div class="info"><h3>Gone Fishin for Better Laws Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/phone-regulate.jpg" alt="Regulate, Don&#39;t Ban Phone Case" loading="lazy"><div class="info"><h3>Regulate, Don&#39;t Ban Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="phone-cases"><img src="merch/phone-classic.jpg" alt="J&amp;H Cannabis News Classic Logo Phone Case" loading="lazy"><div class="info"><h3>J&amp;H Cannabis News Classic Logo Phone Case</h3><span class="soon">Coming soon</span></div></div>
+    <div class="item" data-cat="can-coolers"><img src="merch/cooler.jpg" alt="Vintage Press Badge Can Cooler" loading="lazy"><div class="info"><h3>Vintage Press Badge Can Cooler</h3><span class="soon">Coming soon</span></div></div>
+  </div></div>
   </div>
 </div>
+<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('.cats button')),items=[].slice.call(document.querySelectorAll('.item')),
+      cnt=document.querySelector('.shop .count');
+  function show(c){
+    var n=0;items.forEach(function(it){var on=c==='all'||it.dataset.cat===c;it.hidden=!on;if(on)n++;});
+    btns.forEach(function(b){b.classList.toggle('on',b.dataset.cat===c);});
+    cnt.textContent=n+(n===1?' item':' items');
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.cat);
+    history.replaceState(null,'',b.dataset.cat==='all'?location.pathname:'#'+b.dataset.cat);});});
+  var h=location.hash.slice(1);show(btns.some(function(b){return b.dataset.cat===h;})?h:'all');
+})();
+</script>
 <footer>
   J&amp;H Cannabis News is news reporting and commentary for educational purposes. Nothing on
   this site or channel is legal advice. · <a href="mailto:jhcannabisnews@zohomail.com">jhcannabisnews@zohomail.com</a> · <a href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>
