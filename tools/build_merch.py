@@ -15,6 +15,9 @@ P = [  # (slug, name, price, store product id, mockup path)
     ("veterans-dog-tags-hoodie", "Veterans Dog Tags Hoodie", "$47.99", "33491781", "6adcdb956e278da11903e470/32920/98425/veterans-dog-tags-hoodie.jpg?camera_label=back"),
     ("veterans-dog-tags-black-mug", "Veterans Dog Tags Black Mug", "$16.99", "33491648", "6adcdbac5bb45b7c640f424e/65217/6405/veterans-dog-tags-black-mug.jpg?camera_label=front"),
     ("veterans-dog-tags-20oz-tumbler", "Veterans Dog Tags 20oz Tumbler", "$29.99", "33491685", "6adcdb8d022966bc72071e9f/108286/104182/veterans-dog-tags-20oz-tumbler.jpg?camera_label=front"),
+    # Veterans Deserve Access patch (10-24): hat + sticker
+    ("veterans-deserve-access-patch-hat", "Veterans Deserve Access Patch Hat", "$27.99", "33496007", "6adcf939a01c71b40b093479/125365/135054/veterans-deserve-access-patch-hat.jpg?camera_label=front"),
+    ("veterans-deserve-access-patch-sticker", "Veterans Deserve Access Patch Sticker", "from $4.99", "33496006", "6adcf94351bc2a904809b3eb/45750/16655/veterans-deserve-access-patch-sticker.jpg?camera_label=front"),
     # women's line (10-23): 3 bright pink/purple designs across tees, tumblers, cases, stickers
     ("flower-power-peace-sign-tee", "Flower Power Peace Sign Tee", "$25.99", "33456195", "6adb75eb04ff64518d0e294e/18102/102044/flower-power-peace-sign-tee.jpg?camera_label=front-2"),
     ("texas-grown-texas-regulated-butterfly-tee", "Texas Grown Texas Regulated Butterfly Tee", "$25.99", "33456350", "6adb75f4abc2ab63bd0aac56/18102/102044/texas-grown-texas-regulated-butterfly-tee.jpg?camera_label=front-2"),
