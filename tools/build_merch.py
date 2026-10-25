@@ -3,13 +3,20 @@ merch.html               public "coming soon" page: photos, no prices, no buy li
 merch-preview-jh7q.html  unlisted preview for James & Hope: prices + store links (noindex, not in sitemap).
 Images are saved in merch/ so the pages don't depend on Printify's image links.
 Run: py -3 tools/build_merch.py"""
-import os, urllib.request
+import os, re, urllib.request
 from PIL import Image
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = "https://jh-cannabis-news.printify.me"
 MOCK = "https://images-api.printify.com/mockup/"
 P = [  # (slug, name, price, store product id, mockup path)
+    # acrylic keychain (10-24): Printify has no mockup for it, so merch/<slug>.jpg is our own shop photo (thumbs/merch-keychain-*.jpg)
+    ("veterans-deserve-access-patch-keychain", "Veterans Deserve Access Patch Keychain", "$9.99", "33512356", ""),
+    # die-cut magnets (10-24): 2", 3", 4" in 4 designs
+    ("veterans-deserve-access-patch-magnet", "Veterans Deserve Access Patch Magnet", "from $8.99", "33508054", "6add4b2d21de5de625023847/76776/23708/veterans-deserve-access-patch-magnet.jpg?camera_label=front"),
+    ("veterans-dog-tags-magnet", "Veterans Dog Tags Magnet", "from $8.99", "33508293", "6add4bd32f0d45364d02e1c7/76776/23708/veterans-dog-tags-magnet.jpg?camera_label=front&revision=1792896641908"),
+    ("jh-cannabis-news-logo-magnet", "J&H Cannabis News Logo Magnet", "from $8.99", "33508328", "6add4bb451bc2a904809f807/76776/23708/jh-cannabis-news-logo-magnet.jpg?camera_label=front"),
+    ("regulate-dont-ban-magnet", "Regulate, Don't Ban Magnet", "from $8.99", "33508295", "6add4be551bc2a904809f822/76776/23708/regulate-dont-ban-magnet.jpg?camera_label=front"),
     # Veterans Dog Tags (10-24): tee, black mug, 20oz tumbler, hoodie (big back print + J&H chest logo)
     ("veterans-dog-tags-tee", "Veterans Dog Tags Tee", "$25.99", "33491616", "6adcdb7b0842128e3b04764a/18102/102044/veterans-dog-tags-tee.jpg?camera_label=front-2"),
     ("veterans-dog-tags-hoodie", "Veterans Dog Tags Hoodie", "$47.99", "33491781", "6adcdb956e278da11903e470/32920/98425/veterans-dog-tags-hoodie.jpg?camera_label=back"),
@@ -122,13 +129,14 @@ CSS = """<style>
 
 CATS = [("shirts", "Shirts", "tee"), ("hoodies", "Hoodies", "hoodie"), ("mugs", "Mugs", "mug"),
         ("tumblers", "Tumblers", "tumbler"), ("hats", "Hats", ("hat", "beanie")), ("stickers", "Stickers", "sticker"),
-        ("phone-cases", "Phone cases", "phone case"), ("can-coolers", "Can coolers", "cooler")]
+        ("phone-cases", "Phone cases", "phone case"), ("can-coolers", "Can coolers", "cooler"),
+        ("magnets", "Magnets", "magnet"), ("keychains", "Keychains", "keychain")]
 
 
 def category(name):
     n = name.lower()
     for key, _, words in sorted(CATS, key=lambda c: c[0] != "hoodies"):   # "hoodie" before "tee" style matches
-        if any(w in n for w in ((words,) if isinstance(words, str) else words)):
+        if any(re.search(r"\b" + w + r"\b", n) for w in ((words,) if isinstance(words, str) else words)):
             return key
     raise ValueError("no merch category for " + name)
 
