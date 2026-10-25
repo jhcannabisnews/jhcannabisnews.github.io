@@ -8,6 +8,7 @@ from PIL import Image
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = "https://jh-cannabis-news.printify.me"
+LIVE = True   # store opened at 1,000 subscribers (Oct 25, 2026); launch week 10% off Oct 25 - Nov 1
 MOCK = "https://images-api.printify.com/mockup/"
 P = [  # (slug, name, price, store product id, mockup path)
     # acrylic keychain (10-24): Printify has no mockup for it, so merch/<slug>.jpg is our own shop photo (thumbs/merch-keychain-*.jpg)
@@ -191,8 +192,9 @@ def page(preview, nav):
     items = sorted(P, key=lambda p: order.index(category(p[1])))   # stable: newest-first order kept inside a category
     counts = {k: sum(category(p[1]) == k for p in P) for k in order}
     for slug, name, price, pid, _ in items:
-        if preview:
-            body = f'<span class="price">{price}</span><br><a class="btn" href="{STORE}/product/{pid}">View in store</a>'
+        if preview or LIVE:
+            body = (f'<span class="price">{price}</span><br><a class="btn" href="{STORE}/product/{pid}">'
+                    + ('View in store' if preview else 'Buy now') + '</a>')
         else:
             body = '<span class="soon">Coming soon</span>'
         cards.append(f'<div class="item" data-cat="{category(name)}"><img src="merch/{slug}.jpg" alt="{esc(name)}" loading="lazy">'
@@ -205,6 +207,18 @@ def page(preview, nav):
         title, meta = "Merch Preview", '<meta name="robots" content="noindex,nofollow">'
         top = ('<div class="notice">🔒 <strong>Private preview for James &amp; Hope.</strong> This page isn\'t linked anywhere. '
                'Checkout stays off until the store is verified.</div>\n  <h1>J&amp;H Merch (preview)</h1>')
+    elif LIVE:
+        title = "J&amp;H Merch"
+        meta = ('<meta name="description" content="Official J&amp;H Cannabis News merch: tees, hoodies, hats, tumblers, mugs, '
+                'stickers, magnets and keychains. 10% off launch week.">')
+        nav = nav.replace('<a href="merch.html">', '<a href="merch.html" class="active">')
+        top = ('<h1>J&amp;H Merch</h1>\n  <div class="tag">The store is open!</div>\n  <div class="bar"></div>\n'
+               '  <div class="notice">🎉 <strong>We hit 1,000 subscribers!</strong> Thank you. Launch week: <strong>10% off everything '
+               'through Nov. 1</strong>, no code needed, it comes off at checkout. Shipping is extra.</div>\n'
+               '  <p class="lead">Official J&amp;H Cannabis News gear: tees, hoodies with big back prints, hats, tumblers, mugs, '
+               'stickers, magnets and keychains. <strong>Regulate, don\'t ban.</strong> Every order helps keep the channel going.</p>\n'
+               f'  <a class="btn" href="{STORE}">🛍️ Shop the full store</a>\n'
+               '  <a class="btn ghost" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>')
     else:
         title = "J&amp;H Merch"
         meta = ('<meta name="description" content="Official J&amp;H Cannabis News merch is coming soon: tees, hoodies, hats, '
