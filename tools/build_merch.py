@@ -159,7 +159,7 @@ FILTER_JS = """<script>
 
 FOOT = """<footer>
   J&amp;H Cannabis News is news reporting and commentary for educational purposes. Nothing on
-  this site or channel is legal advice. · <a href="mailto:jhcannabisnews@zohomail.com">jhcannabisnews@zohomail.com</a> · <a href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>
+  this site or channel is legal advice. · <a href="mailto:james@jhcannabisnews.com">james@jhcannabisnews.com</a> · <a href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>
 </footer>
 </body>
 </html>
