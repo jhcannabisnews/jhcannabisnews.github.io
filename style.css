@@ -12,6 +12,8 @@ nav a { color:var(--grey); text-decoration:none; font-weight:700; padding:10px 1
         border-radius:8px; }
 nav a:hover { color:var(--white); background:var(--panel); }
 nav a.active { color:var(--white); background:var(--red); }
+nav a.nav-sub { color:var(--white); background:var(--red); border-radius:8px; }
+nav a.nav-sub:hover { background:#c42a2a; }
 
 .hero { position:relative; }
 .hero img { display:block; width:100%; max-height:420px; object-fit:cover; }

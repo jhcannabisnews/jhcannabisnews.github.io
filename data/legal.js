@@ -1,4 +1,4 @@
-// "Is it legal in my state?" data. LAST CHECKED: October 12, 2026.
+// "Is it legal in my state?" data. LAST CHECKED: October 29, 2026.
 // rec:  "yes" adult-use legal | "partial" possession legal, no licensed stores | "no"
 // med:  "full" comprehensive medical program | "limited" low-THC / CBD-only | "none"
 // hemp: "ban" state bans or tightly restricts intoxicating hemp THC (delta-8 etc.); listed ONLY where
@@ -7,7 +7,7 @@
 //       Nov 12 and Dec 11, 2026 for every state.
 // Sources: Ballotpedia, NORML state laws, MPP, World Population Review / MADD (adult-use list),
 // hemp-law trackers cross-checked, Texas DSHS (July 31, 2026 rule).
-const LEGAL_CHECKED = "October 12, 2026";
+const LEGAL_CHECKED = "October 29, 2026";
 const LEGAL = {
  al:{n:"Alabama",rec:"no",med:"full",hemp:"check",note:"Medical program licensed; recreational use is illegal."},
  ak:{n:"Alaska",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2014; licensed stores statewide."},
@@ -22,7 +22,7 @@ const LEGAL = {
  ga:{n:"Georgia",rec:"no",med:"limited",hemp:"check",note:"Low-THC oil program only; no smokable medical or recreational market."},
  hi:{n:"Hawaii",rec:"no",med:"full",hemp:"check",note:"Medical legal and small amounts decriminalized; recreational bills keep stalling."},
  id:{n:"Idaho",rec:"no",med:"none",hemp:"ban",note:"Fully illegal, including any THC in hemp products. HJR 4 on the Nov 3, 2026 ballot would stop citizens from ever legalizing by initiative."},
- il:{n:"Illinois",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2020; licensed stores statewide."},
+ il:{n:"Illinois",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2020; licensed stores statewide. From Nov 12, hemp products over 0.4 mg total THC per container count as cannabis under Illinois law and come off regular store shelves."},
  in:{n:"Indiana",rec:"no",med:"limited",hemp:"check",note:"Low-THC CBD only; recreational and medical bills have not passed."},
  ia:{n:"Iowa",rec:"no",med:"limited",hemp:"ban",note:"Limited medical cannabidiol program. State law sharply limits THC in hemp products."},
  ks:{n:"Kansas",rec:"no",med:"none",hemp:"check",note:"No medical or recreational program; among the strictest states."},
@@ -34,12 +34,12 @@ const LEGAL = {
  mi:{n:"Michigan",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2018; one of the biggest markets."},
  mn:{n:"Minnesota",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2023; low-dose hemp THC edibles and drinks are regulated and sold to adults 21+."},
  ms:{n:"Mississippi",rec:"no",med:"full",hemp:"ban",note:"Medical program active since 2022; recreational is illegal."},
- mo:{n:"Missouri",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2022."},
+ mo:{n:"Missouri",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2022. From Nov 12, intoxicating hemp products move into licensed marijuana dispensaries; hemp THC drinks get until Dec 11."},
  mt:{n:"Montana",rec:"yes",med:"full",hemp:"ban",note:"Adult-use legal since 2021."},
  ne:{n:"Nebraska",rec:"no",med:"full",hemp:"check",note:"Voters approved medical cannabis in 2024; the rollout has been slow and contested. Recreational is illegal."},
  nv:{n:"Nevada",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2016; consumption lounges are open."},
  nh:{n:"New Hampshire",rec:"no",med:"full",hemp:"check",note:"Medical only; the last New England state without recreational."},
- nj:{n:"New Jersey",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2022."},
+ nj:{n:"New Jersey",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2022. After Nov 13, hemp THC drinks can only be sold by licensed cannabis retailers. A bill to move that to Dec 11 passed the state Senate; the Assembly has not voted yet."},
  nm:{n:"New Mexico",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2022."},
  ny:{n:"New York",rec:"yes",med:"full",hemp:"ban",note:"Adult-use legal; retail sales passed $4.1 billion. Delta-8 is not allowed in hemp products."},
  nc:{n:"North Carolina",rec:"no",med:"limited",hemp:"check",note:"No comprehensive medical program; hemp-derived products are widely sold."},
@@ -48,7 +48,7 @@ const LEGAL = {
  ok:{n:"Oklahoma",rec:"no",med:"full",hemp:"check",note:"One of the largest medical programs per person; recreational failed in 2023."},
  or:{n:"Oregon",rec:"yes",med:"full",hemp:"check",note:"Adult-use legal since 2014; intoxicating hemp products are limited by state rules."},
  pa:{n:"Pennsylvania",rec:"no",med:"full",hemp:"check",note:"Large medical program; leaders say recreational needs national direction first."},
- ri:{n:"Rhode Island",rec:"yes",med:"full",hemp:"ban",note:"Adult-use legal since 2022. Hemp growers still don't know what they can sell next year."},
+ ri:{n:"Rhode Island",rec:"yes",med:"full",hemp:"ban",note:"Adult-use legal since 2022. Hemp shops must report their inventory by Dec 4; after Dec 11, over-limit products can be held but not sold."},
  sc:{n:"South Carolina",rec:"no",med:"limited",hemp:"check",note:"CBD only; medical bills keep dying in the legislature."},
  sd:{n:"South Dakota",rec:"no",med:"full",hemp:"check",note:"Medical legal; the 2020 recreational win was struck down in court."},
  tn:{n:"Tennessee",rec:"no",med:"limited",hemp:"check",note:"No medical program beyond limited CBD; hemp-derived THC is regulated for adults 21+."},

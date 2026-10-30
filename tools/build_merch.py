@@ -210,13 +210,15 @@ def page(preview, nav):
     elif LIVE:
         title = "J&amp;H Merch"
         meta = ('<meta name="description" content="Official J&amp;H Cannabis News merch: tees, hoodies, hats, tumblers, mugs, '
-                'stickers, magnets and keychains. 10% off launch week.">')
+                'stickers, magnets and keychains.">')
         nav = nav.replace('<a href="merch.html">', '<a href="merch.html" class="active">')
         top = ('<h1>J&amp;H Merch</h1>\n  <div class="tag">The store is open!</div>\n  <div class="bar"></div>\n'
-               '  <div class="notice">🎉 <strong>We hit 1,000 subscribers!</strong> Thank you. Launch week: <strong>10% off everything '
+               '  <div class="notice" id="launch-sale">🎉 <strong>We hit 1,000 subscribers!</strong> Thank you. Launch week: <strong>10% off everything '
                'through Nov. 1</strong>, no code needed, it comes off at checkout. Shipping is extra.</div>\n'
+               '  <script>if(Date.now()>=Date.parse("2026-11-02T00:00:00-05:00"))document.getElementById("launch-sale").hidden=true</script>\n'
                '  <p class="lead">Official J&amp;H Cannabis News gear: tees, hoodies with big back prints, hats, tumblers, mugs, '
                'stickers, magnets and keychains. <strong>Regulate, don\'t ban.</strong> Every order helps keep the channel going.</p>\n'
+               '  <p style="color:var(--grey);font-size:.9rem">🖨️ Every item is printed on demand and shipped by Printify. Secure checkout in our Printify store.</p>\n'
                f'  <a class="btn" href="{STORE}">🛍️ Shop the full store</a>\n'
                '  <a class="btn ghost" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>')
     else:
@@ -230,7 +232,7 @@ def page(preview, nav):
                '  <a class="btn" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>\n'
                '  <a class="btn ghost" href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>')
     return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            f'<title>{title}</title>\n{meta}\n<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">\n{CSS}\n</head>\n<body>\n'
+            f'<title>{title}</title>\n{meta}\n<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css">\n{CSS}\n<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "af0be1d6d28d4b12a34e29dee0df9b78"}}\'></script>\n</head>\n<body>\n'
             f'<nav>{nav}</nav>\n<div class="wrap center">\n  {top}\n  <div class="shop">\n  {side}\n  <div style="flex:1">'
             '<p class="count"></p>\n  <div class="merch-grid">\n    '
             + "\n    ".join(cards) + "\n  </div></div>\n  </div>\n</div>\n" + FILTER_JS + "\n" + FOOT)

@@ -1,12 +1,12 @@
-"""Keep the home page's 1,000-subscriber goal bar current: read the channel's public subscriber count
-and rewrite the bar width and "N of 1,000 subscribers" text in index.html. Runs every 30 minutes from
+"""Keep the home page's subscriber goal bar current: read the channel's public subscriber count
+and rewrite the bar width and "N of 2,500 subscribers" text in index.html. Runs every 30 minutes from
 .github/workflows/subs.yml; by hand: python3 tools/subs.py
 If YouTube can't be read (bot wall, layout change), it leaves the page alone and exits 1 so the run shows as failed."""
 import os, re, sys, urllib.request
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 URL = "https://www.youtube.com/@jhcannabisnews/about?hl=en&gl=US"
-GOAL = 1000
+GOAL = 2500
 
 
 def count():

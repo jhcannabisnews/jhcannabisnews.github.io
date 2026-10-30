@@ -8,7 +8,7 @@ import re
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAIN = [("index.html", "Home"), ("checker.html", "Is It Legal?"), ("bills.html", "TX Bills"), ("episodes.html", "Episodes"), ("shorts.html", "Shorts"),
-        ("states.html", "States"), ("headlines.html", "Headlines")]
+        ("states.html", "States"), ("headlines.html", "Headlines"), ("merch.html", "🛍️ Merch")]
 MORE = [("election.html", "🗳️ Election 2026"), ("explainers.html", "Explainers"), ("watchlist.html", "Watch List"),
         ("ask.html", "Ask James &amp; Hope"), ("about.html", "About")]
 NAV_RE = re.compile(r"<nav>.*?</nav>", re.S)
@@ -26,7 +26,9 @@ def nav_for(page):
     lines += [f"  {link(h, l)}" for h, l in MAIN]
     lines.append(f"  <details><summary{more_active}>More ▾</summary><div class=\"menu\">")
     lines += [f"    {link(h, l)}" for h, l in MORE]
-    lines += ["  </div></details>", "</nav>"]
+    lines += ["  </div></details>",
+              '  <a class="nav-sub" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>',
+              "</nav>"]
     return "\n".join(lines)
 
 

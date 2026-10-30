@@ -26,7 +26,7 @@
   #mapbox path { stroke:#0c0c10; stroke-width:1.5; cursor:pointer; transition:filter .15s; }
   #mapbox path:hover { filter:brightness(1.35); }
   #mapbox path.sel { stroke:#f2f2f5; stroke-width:3; }
-  .st-rec { fill:#4aaa6c; } .st-med { fill:#a874e2; } .st-lim { fill:#6a6a74; } .st-ill { fill:#e23636; }
+  .st-rec { fill:#4aaa6c; } .st-pos { fill:#e07ab0; } .st-med { fill:#a874e2; } .st-lim { fill:#6a6a74; } .st-ill { fill:#e23636; }
   #panel { background:var(--panel); border-radius:14px; padding:24px; margin-top:18px;
            border-left:6px solid var(--red); text-align:left; }
   #panel h2 { margin:0 0 4px; color:var(--white); font-size:1.6rem; }
@@ -55,12 +55,14 @@
     <a href="ask.html">Ask James &amp; Hope</a>
     <a href="about.html">About</a>
   </div></details>
+  <a class="nav-sub" href="https://www.youtube.com/@jhcannabisnews?sub_confirmation=1">▶ Subscribe</a>
 </nav>
 <div class="wrap center">
   <h1>Cannabis law by state</h1>
   <p class="lead">Click your state for its current status and the latest news.</p>
   <div class="legend">
     <span><i class="dot" style="background:#4aaa6c"></i> Recreational legal</span>
+    <span><i class="dot" style="background:#e07ab0"></i> Possession legal, no stores</span>
     <span><i class="dot" style="background:#a874e2"></i> Medical only</span>
     <span><i class="dot" style="background:#6a6a74"></i> Limited / CBD only</span>
     <span><i class="dot" style="background:#e23636"></i> Illegal</span>
@@ -341,7 +343,7 @@
   · <a href="mailto:james@jhcannabisnews.com">james@jhcannabisnews.com</a> · <a href="https://discord.gg/EXqpgyQyBq">💬 Join our Discord</a>
 </footer>
 <script>
-const REC = "Recreational legal", MED = "Medical only", LIM = "Limited / CBD only", ILL = "Illegal";
+const REC = "Recreational legal", POS = "Possession legal, no stores", MED = "Medical only", LIM = "Limited / CBD only", ILL = "Illegal";
 const S = {
  al:[MED,"Medical program active; recreational use remains illegal."],
  ak:[REC,"Adult-use legal since 2014; licensed retail statewide."],
@@ -388,15 +390,15 @@ const S = {
  tx:[LIM,"Low-THC medical (TCUP) only — and since July 31, 2026 delta-8, delta-10 and THCA flower are Schedule I. Possession can be a state jail felony. Three lawsuits, zero injunctions; next hearing Oct 30."],
  ut:[MED,"Medical program active; recreational illegal."],
  vt:[REC,"Adult-use legal; retail since 2022."],
- va:[REC,"Possession and home grow legal — but retail sales still are not. The legal-sales fight continues."],
+ va:[POS,"Possession and home grow legal — but retail sales still are not. The legal-sales fight continues."],
  wa:[REC,"Adult-use legal since 2012; one of the first two states."],
  wv:[MED,"Medical program active; recreational illegal."],
  wi:[LIM,"CBD-only; surrounded by legal states, still no program."],
  wy:[LIM,"CBD-only; among the last states with no real program."],
- dc:[REC,"Possession and gifting legal; Congress still blocks licensed sales."]
+ dc:[POS,"Possession and gifting legal; Congress still blocks licensed sales."]
 };
-const CLS = {[REC]:"st-rec",[MED]:"st-med",[LIM]:"st-lim",[ILL]:"st-ill"};
-const COLOR = {[REC]:"#4aaa6c",[MED]:"#a874e2",[LIM]:"#6a6a74",[ILL]:"#e23636"};
+const CLS = {[REC]:"st-rec",[POS]:"st-pos",[MED]:"st-med",[LIM]:"st-lim",[ILL]:"st-ill"};
+const COLOR = {[REC]:"#4aaa6c",[POS]:"#e07ab0",[MED]:"#a874e2",[LIM]:"#6a6a74",[ILL]:"#e23636"};
 const map = document.querySelector("#mapbox svg");
 let sel = null;
 map.querySelectorAll("path").forEach(p => {
