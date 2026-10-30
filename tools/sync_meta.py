@@ -5,7 +5,7 @@ import glob, html, os, re
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://jhcannabisnews.com/"
 DESC = {
-    "index.html": "Cannabis law news every weekday with James & Hope: federal rescheduling, the hemp ban, state laws and every ballot vote, explained in plain English.",
+    "index.html": "Cannabis law news every day with James & Hope: federal rescheduling, the hemp ban, state laws and every ballot vote, explained in plain English.",
     "episodes.html": "Every J&H Cannabis News episode: the day's biggest cannabis-law stories with real local news clips, explained by James & Hope.",
     "shorts.html": "The biggest cannabis-law story of each episode in under a minute, from J&H Cannabis News.",
     "states.html": "Interactive map of cannabis and hemp laws in all 50 states, with the latest news for each state.",
@@ -35,6 +35,11 @@ for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
     t = open(path, encoding="utf-8").read()
     m = re.search(r"<title>(.*?)</title>", t, re.S)
     if not m:          # e.g. the Search Console verification file
+        continue
+    if page == "merch-preview-jh7q.html":   # private preview: no tags, never in the sitemap
+        continue
+    if page == "merch.html":                # tools/build_merch.py writes its own head
+        pages.append(BASE + page)
         continue
     title = html.unescape(m.group(1).strip())
     desc = DESC.get(page) or DESC["index.html"]
