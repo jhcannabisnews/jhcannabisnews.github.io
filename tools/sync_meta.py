@@ -42,7 +42,8 @@ for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
         pages.append(BASE + page)
         continue
     title = html.unescape(m.group(1).strip())
-    desc = DESC.get(page) or DESC["index.html"]
+    xd = re.search(r'<meta name="x-desc" content="([^"]*)">', t)   # pages written by tools/build_state_pages.py
+    desc = DESC.get(page) or (html.unescape(xd.group(1)) if xd else DESC["index.html"])
     url = BASE + ("" if page == "index.html" else page)
     e = lambda s: html.escape(s, quote=True)
     block = "\n".join([START,
