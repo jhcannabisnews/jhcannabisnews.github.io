@@ -23,6 +23,11 @@ P = [  # (slug, name, price, store product id, mockup path)
     ("veterans-dog-tags-hoodie", "Veterans Dog Tags Hoodie", "$47.99", "33491781", "6adcdb956e278da11903e470/32920/98425/veterans-dog-tags-hoodie.jpg?camera_label=back"),
     ("veterans-dog-tags-black-mug", "Veterans Dog Tags Black Mug", "$16.99", "33491648", "6adcdbac5bb45b7c640f424e/65217/6405/veterans-dog-tags-black-mug.jpg?camera_label=front"),
     ("veterans-dog-tags-20oz-tumbler", "Veterans Dog Tags 20oz Tumbler", "$29.99", "33491685", "6adcdb8d022966bc72071e9f/108286/104182/veterans-dog-tags-20oz-tumbler.jpg?camera_label=front"),
+    # New 11-02: two veteran tees, Grow Your Own Way (black tee), Disco & Due Process crop top
+    ("honor-their-service-tee", "Honor Their Service Tee", "$25.99", "33900314", "6ae97220d9162a585007b8e2/18102/102044/honor-their-service-tee.jpg?camera_label=front-2"),
+    ("let-vets-choose-tee", "Let Vets Choose Tee", "$25.99", "33900323", "6ae9722a28da1f61c60c85ee/18102/102044/let-vets-choose-tee.jpg?camera_label=front-2"),
+    ("grow-your-own-way-tee", "Grow Your Own Way Tee", "$25.99", "33900328", "6ae9722e28da1f61c60c85f1/18102/102044/grow-your-own-way-tee.jpg?camera_label=front-2"),
+    ("disco-and-due-process-crop-top", "Disco and Due Process Crop Top", "$24.99", "33900386", "6ae97409d9162a585007b9f6/61350/112815/disco-and-due-process-crop-top.jpg?camera_label=front"),
     # Veterans Deserve Access patch (10-24): hat + sticker
     ("veterans-deserve-access-patch-hat", "Veterans Deserve Access Patch Hat", "$27.99", "33496007", "6adcf939a01c71b40b093479/125365/135054/veterans-deserve-access-patch-hat.jpg?camera_label=front"),
     ("veterans-deserve-access-patch-sticker", "Veterans Deserve Access Patch Sticker", "from $4.99", "33496006", "6adcf94351bc2a904809b3eb/45750/16655/veterans-deserve-access-patch-sticker.jpg?camera_label=front"),
@@ -128,7 +133,7 @@ CSS = """<style>
   .cats h2{display:none}.cats button{width:auto;white-space:nowrap;gap:6px;flex:0 0 auto}}
 </style>"""
 
-CATS = [("shirts", "Shirts", "tee"), ("hoodies", "Hoodies", "hoodie"), ("mugs", "Mugs", "mug"),
+CATS = [("shirts", "Shirts", ("tee", "crop top")), ("hoodies", "Hoodies", "hoodie"), ("mugs", "Mugs", "mug"),
         ("tumblers", "Tumblers", "tumbler"), ("hats", "Hats", ("hat", "beanie")), ("stickers", "Stickers", "sticker"),
         ("phone-cases", "Phone cases", "phone case"), ("can-coolers", "Can coolers", "cooler"),
         ("magnets", "Magnets", "magnet"), ("keychains", "Keychains", "keychain")]
