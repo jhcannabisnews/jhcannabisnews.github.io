@@ -11,8 +11,14 @@
       "no": "Keeps the legal recreational market Massachusetts voters approved in 2016.",
       "context": "No state has ever shut down a legal recreational market. Polls: UNH 71% no / 24% yes; MassINC 61% no / 27% yes / 11% undecided. Governor Maura Healey and Senators Warren and Markey oppose it. The repeal side has out-raised the no side about 2 to 1.",
       "closes": "7:00 PM Central",
-      "story": "marijuana-rescheduling-paused.html",
-      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+      "story": "cannabis-on-the-ballot-2026.html",
+      "result": {
+        "status": "pending",
+        "yes_pct": null,
+        "no_pct": null,
+        "reporting_pct": null,
+        "called": ""
+      }
     },
     {
       "id": "id-hjr4",
@@ -24,7 +30,13 @@
       "context": "Idaho is one of the last states where marijuana is completely illegal. Lawmakers passed HJR 4 58–10 in the House and 29–6 in the Senate, and a medical marijuana initiative fell short of the 2026 ballot.",
       "closes": "9:00 PM Central (10 PM in the panhandle)",
       "story": "cannabis-on-the-ballot-2026.html",
-      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+      "result": {
+        "status": "pending",
+        "yes_pct": null,
+        "no_pct": null,
+        "reporting_pct": null,
+        "called": ""
+      }
     },
     {
       "id": "hou-prop-a",
@@ -36,7 +48,13 @@
       "context": "Ground Game Texas gathered about 40,000 signatures. The Houston police officers' union opposes it. A 2025 Texas appeals court ruling against similar local measures means even a yes vote could face a legal fight. Early voting starts October 19.",
       "closes": "7:00 PM Central",
       "story": "cannabis-on-the-ballot-2026.html",
-      "result": {"status": "pending", "yes_pct": null, "no_pct": null, "reporting_pct": null, "called": ""}
+      "result": {
+        "status": "pending",
+        "yes_pct": null,
+        "no_pct": null,
+        "reporting_pct": null,
+        "called": ""
+      }
     }
   ]
 }
