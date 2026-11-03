@@ -2,8 +2,9 @@
 // data-kind="law" shows IN EFFECT once the date passes; anything else shows PASSED.
 // The home page "next big date" box (#next-date) picks the soonest upcoming entry below.
 const JH_DATES = [
-  { when: "2026-11-02T09:00:00-06:00", kind: "event", what: "Texas — Travis County hearing on the THC ban (moved from Oct 30)" },
-  { when: "2026-11-03T00:00:00-05:00", kind: "event", what: "Election Day — Massachusetts Question 8 & the Idaho amendment" },
+  { when: "2026-11-03T00:00:00-05:00", kind: "event", what: "Election Day — Massachusetts Question 8, Idaho HJR 4, Houston Prop A & the Texas Lt. Governor race" },
+  { when: "2026-11-05T00:00:00-06:00", kind: "event", what: "Federal — reply briefs due in the DEA rescheduling hearing" },
+  { when: "2026-11-09T08:00:00-06:00", kind: "event", what: "Texas — early bill filing opens for the 2027 session" },
   { when: "2026-11-12T00:00:00-05:00", kind: "law",   what: "Federal — cannabinoids the plant can't make (like THC-O) lose hemp status" },
   { when: "2026-12-11T00:00:00-05:00", kind: "law",   what: "Federal — 0.4 mg total-THC cap on hemp products" },
 ];
