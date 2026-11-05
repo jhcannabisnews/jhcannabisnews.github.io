@@ -2,11 +2,12 @@
 // data-kind="law" shows IN EFFECT once the date passes; anything else shows PASSED.
 // The home page "next big date" box (#next-date) picks the soonest upcoming entry below.
 const JH_DATES = [
-  { when: "2026-11-03T00:00:00-05:00", kind: "event", what: "Election Day — Massachusetts Question 8, Idaho HJR 4, Houston Prop A & the Texas Lt. Governor race" },
   { when: "2026-11-05T00:00:00-06:00", kind: "event", what: "Federal — reply briefs due in the DEA rescheduling hearing" },
-  { when: "2026-11-09T08:00:00-06:00", kind: "event", what: "Texas — early bill filing opens for the 2027 session" },
+  { when: "2026-11-09T08:00:00-06:00", kind: "event", what: "Texas bill filing opens for 2027 · Congress returns for the lame duck" },
   { when: "2026-11-12T00:00:00-05:00", kind: "law",   what: "Federal — cannabinoids the plant can't make (like THC-O) lose hemp status" },
   { when: "2026-12-11T00:00:00-05:00", kind: "law",   what: "Federal — 0.4 mg total-THC cap on hemp products" },
+  { when: "2027-01-03T12:00:00-05:00", kind: "event", what: "Federal — new Congress sworn in" },
+  { when: "2027-01-12T12:00:00-06:00", kind: "event", what: "Texas — 2027 legislative session begins (Perry says he'll bring a new THC ban bill)" },
 ];
 
 function jhFormat(ms, kind) {

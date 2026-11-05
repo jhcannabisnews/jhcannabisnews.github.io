@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-12T23:45:00-05:00",
-  "note": "Results appear here on election night. Polls close 7 PM Central in Massachusetts and Houston, 9 PM Central in most of Idaho (10 PM in the panhandle).",
+  "updated": "2026-11-04T19:30:00-06:00",
+  "note": "Unofficial results as of Nov 4, 2026 (AP and station counts).",
   "measures": [
     {
       "id": "ma-q8",
@@ -13,11 +13,11 @@
       "closes": "7:00 PM Central",
       "story": "cannabis-on-the-ballot-2026.html",
       "result": {
-        "status": "pending",
-        "yes_pct": null,
-        "no_pct": null,
+        "status": "called",
+        "yes_pct": 24,
+        "no_pct": 76,
         "reporting_pct": null,
-        "called": ""
+        "called": "no"
       }
     },
     {
@@ -31,11 +31,11 @@
       "closes": "9:00 PM Central (10 PM in the panhandle)",
       "story": "cannabis-on-the-ballot-2026.html",
       "result": {
-        "status": "pending",
-        "yes_pct": null,
-        "no_pct": null,
+        "status": "called",
+        "yes_pct": 32,
+        "no_pct": 67,
         "reporting_pct": null,
-        "called": ""
+        "called": "no"
       }
     },
     {
@@ -49,11 +49,11 @@
       "closes": "7:00 PM Central",
       "story": "cannabis-on-the-ballot-2026.html",
       "result": {
-        "status": "pending",
-        "yes_pct": null,
-        "no_pct": null,
+        "status": "called",
+        "yes_pct": 72,
+        "no_pct": 28,
         "reporting_pct": null,
-        "called": ""
+        "called": "yes"
       }
     }
   ]
