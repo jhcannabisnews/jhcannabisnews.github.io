@@ -6,7 +6,7 @@ usage: python3 tools/tx_bills.py [SESSION ...]      (default 90R; e.g. 89R for t
 writes data/tx_bills_<SESSION>.json; data/tx_cache_<SESSION>.json remembers each file's listing date so
 later runs only download bills that changed (the first run reads every bill once).
 """
-import ftplib, io, json, os, re, sys, time
+import ftplib, html, io, json, os, re, sys, time, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
@@ -76,6 +76,30 @@ def parse(xml_bytes):
     return {"id": bid, "caption": caption, "subjects": subjects, "authors": root.findtext("authors") or "",
             "last_action": (root.findtext("lastaction") or "").strip(), "actions": acts, "text_url": url}
 
+REPORT_ROW = re.compile(r'Bill=\w+">([A-Z]+ \d+)\s*</a>.*?<b>Author</b>:\s*</div>\s*<div[^>]*>(.*?)</div>.*?Last Action:</b></div>\s*'
+                        r'<div[^>]*>(.*?)</div>.*?<b>Caption</b>:\s*</div>\s*<div[^>]*>(.*?)</div>', re.S)
+
+def report_bills(session):
+    """Cannabis bills from capitol.texas.gov's filed-bills reports, which show same-day filings before the FTP feed does."""
+    found = []
+    for rid in ("housefiled", "senatefiled"):
+        url = f"https://capitol.texas.gov/Reports/Report.aspx?LegSess={session}&ID={rid}"
+        try:
+            page = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=90).read().decode("utf8", "replace")
+        except Exception as e:
+            print(f"report {rid} unavailable: {e}")
+            continue
+        for bid, authors, last, caption in REPORT_ROW.findall(page):
+            caption = html.unescape(caption).strip()
+            if not RELEVANT.search(caption):
+                continue
+            last = html.unescape(last).strip()
+            date = last.split(" ")[0]
+            desc = last.split(" ", 2)[2] if last.count(" ") >= 2 else last
+            found.append({"id": bid, "caption": caption, "subjects": [], "authors": html.unescape(authors).strip(), "last_action": last,
+                          "actions": [{"chamber": bid[0], "date": date, "description": desc}], "text_url": "", "stage": "Filed", "filed": date})
+    return found
+
 def run(session):
     cache_p = os.path.join(SITE, "data", f"tx_cache_{session}.json")
     cache = json.load(open(cache_p)) if os.path.exists(cache_p) else {}
@@ -123,6 +147,12 @@ def run(session):
         b["url"] = f"https://capitol.texas.gov/BillLookup/History.aspx?LegSess={session}&Bill={b['id'].replace(' ', '')}"
         b["_sort"] = (b["id"].split()[0], num)
         bills.append(b)
+    have = {b["id"] for b in bills}
+    for b in report_bills(session):                  # the FTP feed lags; add same-day filings from Capitol's filed-bills pages
+        if b["id"] not in have:
+            b["url"] = f"https://capitol.texas.gov/BillLookup/History.aspx?LegSess={session}&Bill={b['id'].replace(' ', '')}"
+            b["_sort"] = (b["id"].split()[0], int(re.sub(r"\D", "", b["id"]) or 0))
+            bills.append(b)
     bills.sort(key=lambda b: b.pop("_sort"))
     out = {"session": session, "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "source": "Texas Legislative Council (ftp.legis.state.tx.us)", "count": len(bills), "bills": bills}

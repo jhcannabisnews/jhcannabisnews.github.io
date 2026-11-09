@@ -1,7 +1,80 @@
 {
  "session": "90R",
- "updated": "2026-11-09T16:25:36+00:00",
+ "updated": "2026-11-09T16:43:13+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
- "count": 0,
- "bills": []
+ "count": 4,
+ "bills": [
+  {
+   "id": "HB 330",
+   "caption": "Relating to the medical use of low-THC cannabis by patients with a medical condition that causes menstrual cramps.",
+   "subjects": [],
+   "authors": "Plesa",
+   "last_action": "11/09/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/09/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "",
+   "stage": "Filed",
+   "filed": "11/09/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB330"
+  },
+  {
+   "id": "HB 362",
+   "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license or registration; creating a criminal offense; imposing a tax.",
+   "subjects": [],
+   "authors": "Bucy",
+   "last_action": "11/09/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/09/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "",
+   "stage": "Filed",
+   "filed": "11/09/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB362"
+  },
+  {
+   "id": "HB 369",
+   "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license or registration; creating a criminal offense; imposing a tax.",
+   "subjects": [],
+   "authors": "Moody",
+   "last_action": "11/09/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/09/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "",
+   "stage": "Filed",
+   "filed": "11/09/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB369"
+  },
+  {
+   "id": "HB 507",
+   "caption": "Relating to drug testing and prescription drug policies for employees and independent contractors of state agencies and political subdivisions regarding the medical use of low-THC cannabis and hemp.",
+   "subjects": [],
+   "authors": "Bucy",
+   "last_action": "11/09/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/09/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "",
+   "stage": "Filed",
+   "filed": "11/09/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB507"
+  }
+ ]
 }
