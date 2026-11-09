@@ -2,7 +2,8 @@ name: Refresh Texas bill tracker
 
 on:
   schedule:
-    - cron: "15 11,23 * * *"   # 6:15 AM and 6:15 PM Central (CDT), after the Legislature's overnight update
+    - cron: "15 11,23 * * *"   # 5:15 AM and 5:15 PM Central (CST), after the Legislature's overnight update
+    - cron: "20 13-22,0-4 9-14 11 *"   # hourly during Texas's first prefiling week, about 7 AM to 10 PM Central (remove after Nov 14)
   workflow_dispatch:
 
 permissions:

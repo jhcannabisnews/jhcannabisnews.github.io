@@ -14,7 +14,7 @@ HOST = "ftp.legis.state.tx.us"
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TYPES = ["house_bills", "senate_bills", "house_joint_resolutions", "senate_joint_resolutions"]
 # what counts as a cannabis bill: caption or official subject index
-RELEVANT = re.compile(r"marihuana|marijuana|cannabis|cannabidiol|tetrahydrocannabinol|\bTHC\b|\bhemp\b|"
+RELEVANT = re.compile(r"marihuana|marijuana|cannabis|cannabinoid|cannabidiol|tetrahydrocannabinol|\bTHC\b|\bhemp\b|delta[- ]?[89]\b|"
                       r"compassionate[- ]use|low-THC|psilocyb", re.I)
 
 def ftp():
