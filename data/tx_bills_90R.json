@@ -1,25 +1,28 @@
 {
  "session": "90R",
- "updated": "2026-11-09T16:43:13+00:00",
+ "updated": "2026-11-09T18:48:19+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
- "count": 4,
+ "count": 5,
  "bills": [
   {
    "id": "HB 330",
    "caption": "Relating to the medical use of low-THC cannabis by patients with a medical condition that causes menstrual cramps.",
-   "subjects": [],
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--Other Diseases & Medical Conditions (I0383)"
+   ],
    "authors": "Plesa",
    "last_action": "11/09/2026 H Filed",
    "actions": [
     {
      "chamber": "H",
-     "date": "11/09/2026",
+     "date": "11/9/2026",
      "description": "Filed"
     }
    ],
-   "text_url": "",
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB00330I.HTM",
    "stage": "Filed",
-   "filed": "11/09/2026",
+   "filed": "11/9/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB330"
   },
   {
@@ -31,13 +34,13 @@
    "actions": [
     {
      "chamber": "H",
-     "date": "11/09/2026",
+     "date": "11/9/2026",
      "description": "Filed"
     }
    ],
-   "text_url": "",
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB00362I.HTM",
    "stage": "Filed",
-   "filed": "11/09/2026",
+   "filed": "11/9/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB362"
   },
   {
@@ -49,32 +52,57 @@
    "actions": [
     {
      "chamber": "H",
-     "date": "11/09/2026",
+     "date": "11/9/2026",
      "description": "Filed"
     }
    ],
-   "text_url": "",
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB00369I.HTM",
    "stage": "Filed",
-   "filed": "11/09/2026",
+   "filed": "11/9/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB369"
   },
   {
    "id": "HB 507",
    "caption": "Relating to drug testing and prescription drug policies for employees and independent contractors of state agencies and political subdivisions regarding the medical use of low-THC cannabis and hemp.",
-   "subjects": [],
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Labor--General (I0500)",
+    "State Agencies, Boards & Commissions (I0749)",
+    "State Employees (I0626)"
+   ],
    "authors": "Bucy",
    "last_action": "11/09/2026 H Filed",
    "actions": [
     {
      "chamber": "H",
-     "date": "11/09/2026",
+     "date": "11/9/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB00507I.HTM",
+   "stage": "Filed",
+   "filed": "11/9/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB507"
+  },
+  {
+   "id": "HB 667",
+   "caption": "Relating to the criminal penalties for possession or delivery of marihuana concentrate; changing the eligibility for community supervision.",
+   "subjects": [
+    "Crimes--Drugs (I0185)"
+   ],
+   "authors": "Moody",
+   "last_action": "11/09/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/9/2026",
      "description": "Filed"
     }
    ],
    "text_url": "",
    "stage": "Filed",
-   "filed": "11/09/2026",
-   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB507"
+   "filed": "11/9/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB667"
   }
  ]
 }
