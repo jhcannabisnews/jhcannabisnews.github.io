@@ -128,7 +128,11 @@ def run(session):
                         f.retrbinary(f"RETR {base}/{key}", buf.write); break
                     except (ftplib.all_errors) as e:
                         time.sleep(3); f = ftp(); buf = io.BytesIO()
-                rec = parse(buf.getvalue())
+                try:
+                    rec = parse(buf.getvalue())
+                except ET.ParseError:                # empty or partial download: skip it, the next run retries
+                    print(f"skipped unreadable file {key}")
+                    continue
                 hit = bool(RELEVANT.search(rec["caption"] + " " + " ".join(rec["subjects"])))
                 cache[key] = {"stamp": stamp, "bill": rec if hit else None}
                 fetched += 1
