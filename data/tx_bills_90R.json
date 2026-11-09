@@ -1,6 +1,6 @@
 {
  "session": "90R",
- "updated": "2026-11-09T19:19:59+00:00",
+ "updated": "2026-11-09T20:15:21+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
  "count": 6,
  "bills": [
@@ -99,7 +99,7 @@
      "description": "Filed"
     }
    ],
-   "text_url": "",
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB00667I.HTM",
    "stage": "Filed",
    "filed": "11/9/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB667"
@@ -107,7 +107,18 @@
   {
    "id": "SB 237",
    "caption": "Relating to regulating the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, and use of cannabis and cannabis products; authorizing the imposition of fees; requiring occupational licenses; creating a criminal offense.",
-   "subjects": [],
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Electronic Information Systems (I0311)",
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Occupational Regulation--Health Occupations (I0540)",
+    "MARIHUANA (S3105)",
+    "MEDICINE & PRESCRIPTION DRUGS (S7338)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
    "authors": "Alvarado",
    "last_action": "11/09/2026 S Filed",
    "actions": [
