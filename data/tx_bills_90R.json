@@ -1,6 +1,6 @@
 {
  "session": "90R",
- "updated": "2026-11-09T22:05:25+00:00",
+ "updated": "2026-11-09T23:03:50+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
  "count": 6,
  "bills": [
@@ -9,7 +9,9 @@
    "caption": "Relating to the medical use of low-THC cannabis by patients with a medical condition that causes menstrual cramps.",
    "subjects": [
     "Crimes--Drugs (I0185)",
-    "Health--Other Diseases & Medical Conditions (I0383)"
+    "Health--Other Diseases & Medical Conditions (I0383)",
+    "Women (I0925)",
+    "MARIHUANA (S3105)"
    ],
    "authors": "Plesa",
    "last_action": "11/09/2026 H Filed",
@@ -88,7 +90,10 @@
    "id": "HB 667",
    "caption": "Relating to the criminal penalties for possession or delivery of marihuana concentrate; changing the eligibility for community supervision.",
    "subjects": [
-    "Crimes--Drugs (I0185)"
+    "Crimes--Drugs (I0185)",
+    "MANDATORY & COMMUNITY SUPERVISION (S2314)",
+    "MARIHUANA (S3105)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
    ],
    "authors": "Moody",
    "last_action": "11/09/2026 H Filed",
