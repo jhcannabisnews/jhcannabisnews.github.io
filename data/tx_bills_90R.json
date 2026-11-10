@@ -1,6 +1,6 @@
 {
  "session": "90R",
- "updated": "2026-11-09T23:46:44+00:00",
+ "updated": "2026-11-10T01:29:12+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
  "count": 6,
  "bills": [
@@ -138,7 +138,7 @@
      "description": "Filed"
     }
    ],
-   "text_url": "",
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/SB00237I.HTM",
    "stage": "Filed",
    "filed": "11/9/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB237"
