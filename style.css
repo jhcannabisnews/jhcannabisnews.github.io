@@ -185,3 +185,4 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 .bt-meta { color:var(--grey); font-size:.85rem; margin:8px 0 0; }
 .bt-how li { margin:6px 0; line-height:1.5; }
 @media (max-width:600px) { .bt-stats { grid-template-columns:repeat(2,1fr); } }
+[hidden] { display:none !important; }
