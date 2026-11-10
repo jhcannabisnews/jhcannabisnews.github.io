@@ -1,6 +1,6 @@
 {
  "session": "90R",
- "updated": "2026-11-10T12:06:32+00:00",
+ "updated": "2026-11-10T16:10:52+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
  "count": 6,
  "bills": [
@@ -30,7 +30,26 @@
   {
    "id": "HB 362",
    "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license or registration; creating a criminal offense; imposing a tax.",
-   "subjects": [],
+   "subjects": [
+    "Agriculture (I0020)",
+    "Civil Remedies & Liabilities (I0065)",
+    "Crimes--Drugs (I0185)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Minors--Crimes Against (I0532)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Property Interests--Landlord & Tenant (I0610)",
+    "State Finances--Management & Control (I0748)",
+    "Taxation--Sales (I0800)",
+    "TEXAS REGULATION OF CANNABIS ACT (PQ06I)",
+    "IDENTIFICATION CARDS (S0074)",
+    "MARIHUANA (S3105)",
+    "SIGNS (S0235)",
+    "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
    "authors": "Bucy",
    "last_action": "11/09/2026 H Filed",
    "actions": [
@@ -48,7 +67,26 @@
   {
    "id": "HB 369",
    "caption": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and local regulation of cannabis establishments; authorizing the imposition of fees; requiring an occupational license or registration; creating a criminal offense; imposing a tax.",
-   "subjects": [],
+   "subjects": [
+    "Agriculture (I0020)",
+    "Civil Remedies & Liabilities (I0065)",
+    "Crimes--Drugs (I0185)",
+    "Mental Health & Substance Abuse (I0019)",
+    "Minors--Crimes Against (I0532)",
+    "Minors--Health & Safety (I0533)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
+    "Property Interests--Landlord & Tenant (I0610)",
+    "State Finances--Management & Control (I0748)",
+    "Taxation--Sales (I0800)",
+    "TEXAS REGULATION OF CANNABIS ACT (PQ06I)",
+    "IDENTIFICATION CARDS (S0074)",
+    "MARIHUANA (S3105)",
+    "SIGNS (S0235)",
+    "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
+    "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
+    "LICENSING & REGULATION, TEXAS DEPARTMENT OF (V8529)",
+    "PUBLIC SAFETY, DEPARTMENT OF (V0251)"
+   ],
    "authors": "Moody",
    "last_action": "11/09/2026 H Filed",
    "actions": [
