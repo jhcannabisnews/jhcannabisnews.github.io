@@ -28,9 +28,9 @@ h2 { font-size:1.5rem; margin:34px 0 14px; color:var(--purple); }
 .bar { width:200px; height:4px; background:var(--red); margin:24px auto; border-radius:2px; }
 p.lead { color:var(--grey); font-size:1.08rem; line-height:1.65; max-width:680px; margin:0 auto 30px; }
 
-a.btn { display:inline-block; background:var(--red); color:#fff; text-decoration:none;
+a.btn, button.btn { display:inline-block; background:var(--red); color:#fff; text-decoration:none;
         font-weight:800; font-size:1.1rem; padding:13px 32px; border-radius:40px; margin:6px; }
-a.btn.ghost { background:transparent; border:2px solid var(--grey); color:var(--white); }
+a.btn.ghost, button.btn.ghost { background:transparent; border:2px solid var(--grey); color:var(--white); }
 
 .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px;
          margin:30px 0; text-align:left; }
@@ -186,3 +186,5 @@ article .reviewed { color:var(--grey); font-size:.85rem; margin-top:30px; }
 .bt-how li { margin:6px 0; line-height:1.5; }
 @media (max-width:600px) { .bt-stats { grid-template-columns:repeat(2,1fr); } }
 [hidden] { display:none !important; }
+
+button.btn { border:0; cursor:pointer; font-family:inherit; }
