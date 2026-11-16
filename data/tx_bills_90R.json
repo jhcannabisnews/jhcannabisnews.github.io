@@ -1,8 +1,8 @@
 {
  "session": "90R",
- "updated": "2026-11-16T02:43:27+00:00",
+ "updated": "2026-11-16T21:01:32+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
- "count": 6,
+ "count": 7,
  "bills": [
   {
    "id": "HB 330",
@@ -152,6 +152,29 @@
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB667"
   },
   {
+   "id": "HB 1183",
+   "caption": "Relating to requiring a warning on the labeling of certain consumable hemp products distributed or sold in this state.",
+   "subjects": [
+    "Crimes--Drugs (I0185)",
+    "Health--General (I0385)",
+    "Safety (I0740)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)"
+   ],
+   "authors": "Ward Johnson",
+   "last_action": "11/16/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/16/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB01183I.HTM",
+   "stage": "Filed",
+   "filed": "11/16/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB1183"
+  },
+  {
    "id": "SB 237",
    "caption": "Relating to regulating the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, and use of cannabis and cannabis products; authorizing the imposition of fees; requiring occupational licenses; creating a criminal offense.",
    "subjects": [
@@ -159,6 +182,7 @@
     "Electronic Information Systems (I0311)",
     "Health--Other Diseases & Medical Conditions (I0383)",
     "Occupational Regulation--Health Occupations (I0540)",
+    "Occupational Regulation--Other Trades & Professions (I0541)",
     "MARIHUANA (S3105)",
     "MEDICINE & PRESCRIPTION DRUGS (S7338)",
     "PACKAGING & LABELING REQUIREMENTS (S0339)",
