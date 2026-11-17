@@ -1,8 +1,8 @@
 {
  "session": "90R",
- "updated": "2026-11-17T05:04:32+00:00",
+ "updated": "2026-11-17T19:51:27+00:00",
  "source": "Texas Legislative Council (ftp.legis.state.tx.us)",
- "count": 7,
+ "count": 8,
  "bills": [
   {
    "id": "HB 330",
@@ -81,6 +81,7 @@
     "TEXAS REGULATION OF CANNABIS ACT (PQ06I)",
     "IDENTIFICATION CARDS (S0074)",
     "MARIHUANA (S3105)",
+    "PACKAGING & LABELING REQUIREMENTS (S0339)",
     "SIGNS (S0235)",
     "COMPTROLLER OF PUBLIC ACCOUNTS (V2608)",
     "LICENSING & REGULATION, TEXAS COMMISSION OF (V0383)",
@@ -173,6 +174,26 @@
    "stage": "Filed",
    "filed": "11/16/2026",
    "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB1183"
+  },
+  {
+   "id": "HB 1202",
+   "caption": "Relating to marihuana and marihuana concentrate; providing criminal penalties; changing the eligibility for community supervision.",
+   "subjects": [
+    "Crimes--Drugs (I0185)"
+   ],
+   "authors": "Canales",
+   "last_action": "11/17/2026 H Filed",
+   "actions": [
+    {
+     "chamber": "H",
+     "date": "11/17/2026",
+     "description": "Filed"
+    }
+   ],
+   "text_url": "http://capitol.texas.gov/tlodocs/90R/billtext/html/HB01202I.HTM",
+   "stage": "Filed",
+   "filed": "11/17/2026",
+   "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB1202"
   },
   {
    "id": "SB 237",
