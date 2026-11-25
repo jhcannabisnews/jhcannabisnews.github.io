@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-04T19:30:00-06:00",
-  "note": "Unofficial results as of Nov 4, 2026 (AP and station counts).",
+  "updated": "2026-11-25T12:00:00-06:00",
+  "note": "The Nov 3 election is over. These are the results as called on Nov 3-4 (AP and station counts), unofficial until certified.",
   "measures": [
     {
       "id": "ma-q8",
@@ -45,7 +45,7 @@
       "title": "Marijuana arrests become the lowest police priority",
       "yes": "Writes into the city charter that low-level marijuana arrests are the Houston Police Department's lowest priority. It does NOT legalize marijuana; possession is still a crime under Texas law.",
       "no": "Leaves police enforcement priorities as they are.",
-      "context": "Ground Game Texas gathered about 40,000 signatures. The Houston police officers' union opposes it. A 2025 Texas appeals court ruling against similar local measures means even a yes vote could face a legal fight. Early voting starts October 19.",
+      "context": "Ground Game Texas gathered about 40,000 signatures. The Houston police officers' union opposes it. A 2025 Texas appeals court ruling against similar local measures means even a yes vote could face a legal fight.",
       "closes": "7:00 PM Central",
       "story": "cannabis-on-the-ballot-2026.html",
       "result": {
